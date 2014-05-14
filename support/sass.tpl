@@ -45,4 +45,3 @@ $<%= prefix %>-nativesize: "<%= nativesize %>"
 
 <% each(function (val, key) { %>
   $<%= prefix %>-icon-<%= key %>: "<%= val %>";<% }); %>
-

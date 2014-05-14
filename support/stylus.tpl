@@ -49,4 +49,3 @@ $<%= prefix %>-icon
 <% each(function (val, key) { %>
   <%= key %> = "<%= val %>"<% }); %>
 }
-
