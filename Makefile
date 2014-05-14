@@ -1,13 +1,13 @@
 srcfiles = $(wildcard src/*.json)
-stylfiles = $(patsubst src/%.json, css/%.styl, ${srcfiles})
-sassfiles = $(patsubst src/%.json, css/%.sass, ${srcfiles})
+stylfiles = $(patsubst src/%.json, stylesheets/%.styl, ${srcfiles})
+sassfiles = $(patsubst src/%.json, stylesheets/%.sass, ${srcfiles})
 
 all: ${stylfiles} ${sassfiles}
 
-css/%.styl: src/%.json
+stylesheets/%.styl: src/%.json
 	@echo + $@
 	@node support/build.js "$<" support/stylus.tpl > $@
 
-css/%.sass: src/%.json
+stylesheets,/%.sass: src/%.json
 	@echo + $@
 	@node support/build.js "$<" support/sass.tpl > $@
