@@ -1,3 +1,23 @@
+/*
+  Usage:
+
+     @include ion-font;
+     .button:before {
+       @include ion-icon("arrow");
+       @include ion-icon("arrow", 14px, #333);
+     }
+
+  Output:
+
+     @font-face {
+       font-family: "Ionicons"; ...
+     }
+     .button:before {
+       font-family: "Ionicons";
+       content: '\f0123';
+     }
+ */
+
 $ion-path: "//code.ionicframework.com/ionicons/1.5.2/fonts/"
 $ion-name: "Ionicons"
 $ion-site: "http://ionicons.com/fonts"

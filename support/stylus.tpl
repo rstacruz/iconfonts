@@ -1,3 +1,23 @@
+/*
+  Usage:
+
+     <%= prefix %>-font();
+     .button:before {
+       <%= prefix %>-icon("arrow");
+       <%= prefix %>-icon("arrow", 14px, #333);
+     }
+
+  Output:
+
+     @font-face {
+       font-family: "<%= name %>"; ...
+     }
+     .button:before {
+       font-family: "<%= name %>";
+       content: '\f0123';
+     }
+ */
+
 <%= prefix %> = {
   path: "<%= path %>"
   name: "<%= name %>"

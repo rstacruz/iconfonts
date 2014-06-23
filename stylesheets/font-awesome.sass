@@ -1,3 +1,23 @@
+/*
+  Usage:
+
+     @include fa-font;
+     .button:before {
+       @include fa-icon("arrow");
+       @include fa-icon("arrow", 14px, #333);
+     }
+
+  Output:
+
+     @font-face {
+       font-family: "FontAwesome"; ...
+     }
+     .button:before {
+       font-family: "FontAwesome";
+       content: '\f0123';
+     }
+ */
+
 $fa-path: "//netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/"
 $fa-name: "FontAwesome"
 $fa-site: "http://fontawesome.io/"
