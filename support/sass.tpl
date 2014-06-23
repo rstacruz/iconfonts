@@ -21,10 +21,10 @@ $<%= prefix %>-nativesize: "<%= nativesize %>"
   unless size is "auto"
     font-size: size
   unless top is "auto"
-    posit<%= prefix %>: relative
+    position: relative
     top: top
   unless left is "auto"
-    posit<%= prefix %>: relative
+    position: relative
     left: left
   unless color is "auto"
     color: color
