@@ -1,10 +1,10 @@
-@<%= prefix %>-path: "<%= path %>"
-@<%= prefix %>-name: "<%= name %>"
-@<%= prefix %>-site: "<%= site %>"
-@<%= prefix %>-basename: "<%= basename %>"
-@<%= prefix %>-version: "<%= version %>"
-@<%= prefix %>-svghash: "<%= svghash %>"
-@<%= prefix %>-nativesize: "<%= nativesize %>"
+@<%= prefix %>-path: "<%= path %>";
+@<%= prefix %>-name: "<%= name %>";
+@<%= prefix %>-site: "<%= site %>";
+@<%= prefix %>-basename: "<%= basename %>";
+@<%= prefix %>-version: "<%= version %>";
+@<%= prefix %>-svghash: "<%= svghash %>";
+@<%= prefix %>-nativesize: "<%= nativesize %>";
 
 <%= prefix %>-font() {
   @font-face {
@@ -16,22 +16,10 @@
   }
 }
 
-<%= prefix %>-icon(type, size = auto, color = auto, top = auto, left = auto, shadow = none) {
-  &:extend(.%<%= prefix %>-icon all);
-  content: @<%= prefix %>-icon-{type};
-
-  unless size is "auto"
-    font-size: size;
-  unless top is "auto"
-    position: relative;
-    top: top;
-  unless left is "auto"
-    position: relative;
-    left: left
-  unless color is "auto"
-    color: color
-  unless shadow is "none"
-    text-shadow: shadow
+<%= prefix %>-icon(@type) {
+  &:extend(.<%= prefix %>-icon all);
+  @var: "@<%= prefix %>-icon-@{type}";
+  content: @@var;
 }
 
 .<%= prefix %>-icon {
