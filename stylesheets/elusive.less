@@ -1,3 +1,22 @@
+/*
+  Usage:
+
+     .el-font();
+     .button:before {
+       .el-icon("arrow");
+     }
+
+  Output:
+
+     @font-face {
+       font-family: "Elusive"; ...
+     }
+     .button:before {
+       font-family: "Elusive";
+       content: '\f0123';
+     }
+ */
+
 @el-path: "http://aristath.github.io/elusive-iconfont/assets/elusive-font/font/";
 @el-name: "Elusive";
 @el-site: "http://ionicons.com/fonts";
