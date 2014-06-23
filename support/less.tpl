@@ -55,4 +55,4 @@
 }
 
 <% each(function (val, key) { %>
-  @<%= prefix %>-icon-<%= key %>: "<%= val %>";<% }); %>
+@<%= prefix %>-icon-<%= key %>: "<%= val %>";<% }); %>

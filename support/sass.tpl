@@ -44,4 +44,4 @@ $<%= prefix %>-nativesize: "<%= nativesize %>"
   -moz-osx-font-smoothing: grayscale
 
 <% each(function (val, key) { %>
-  $<%= prefix %>-icon-<%= key %>: "<%= val %>";<% }); %>
+$<%= prefix %>-icon-<%= key %>: "<%= val %>";<% }); %>
