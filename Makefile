@@ -3,7 +3,7 @@ stylfiles = $(patsubst src/%.json, stylesheets/%.styl, ${srcfiles})
 sassfiles = $(patsubst src/%.json, stylesheets/%.sass, ${srcfiles})
 lessfiles = $(patsubst src/%.json, stylesheets/%.less, ${srcfiles})
 
-all: ${stylfiles} ${sassfiles} support/icons.json
+all: ${stylfiles} ${sassfiles} ${lessfiles} support/icons.json
 
 stylesheets/%.styl: src/%.json
 	@echo + $@
