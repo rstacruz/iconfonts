@@ -10,7 +10,7 @@ $el-nativesize: "14px"
   @font-face
     font-family: $el-name
     src: url($el-path + $el-basename + '.eot?v=' + $el-version)
-    src: url($el-path + $el-basename + '.eot?#iefix&v=' + $el-version) format("embedded-opentype"), url(el['path'] + el['basename'] + ".woff?v=" + el['version']) format("woff"), url(el['path'] + el['basename'] + ".ttf?v=" + el-version) format("truetype"), url($elpath + $el-basename + ".svg?v=" + $el-version + $el-svghash) format("svg")
+    src: url($el-path + $el-basename + '.eot?#iefix&v=' + $el-version) format("embedded-opentype"), url($el-path + $el-basename + ".woff?v=" + $el-version) format("woff"), url($el-path + $el-basename + ".ttf?v=" + $el-version) format("truetype"), url($el-path + $el-basename + ".svg?v=" + $el-version + $el-svghash) format("svg")
     font-weight: normal
     font-style: normal
 
@@ -33,7 +33,7 @@ $el-nativesize: "14px"
 
 %el-icon
   line-height: 1em
-  font-family: el['name']
+  font-family: $el-name
   font-weight: normal
   font-style: normal
   display: inline-block

@@ -6,25 +6,25 @@
 @<%= prefix %>-svghash: "<%= svghash %>";
 @<%= prefix %>-nativesize: "<%= nativesize %>";
 
-<%= prefix %>-font() {
+.<%= prefix %>-font() {
   @font-face {
     font-family: @<%= prefix %>-name;
-    src: url(@<%= prefix %>-path + @<%= prefix %>-basename + '.eot?v=' + @<%= prefix %>-version);
-    src: url(@<%= prefix %>-path + @<%= prefix %>-basename + '.eot?#iefix&v=' + @<%= prefix %>-version) format("embedded-opentype"), url(<%= prefix %>['path'] + <%= prefix %>['basename'] + ".woff?v=" + <%= prefix %>['version']) format("woff"), url(<%= prefix %>['path'] + <%= prefix %>['basename'] + ".ttf?v=" + <%= prefix %>-version) format("truetype"), url(@<%= prefix %>path + @<%= prefix %>-basename + ".svg?v=" + @<%= prefix %>-version + @<%= prefix %>-svghash) format("svg");
+    src: url("@<%= prefix %>-path@{<%= prefix %>-basename}.eot?v=@{<%= prefix %>-version}");
+    src: url("@<%= prefix %>-path@{<%= prefix %>-basename}.eot?#iefix&v=@{<%= prefix %>-version}") format("embedded-opentype"), url("@{<%= prefix %>-path}@{<%= prefix %>-basename}.woff?v=@<%= prefix %>-version}") format("woff"), url("@{<%= prefix %>-path}@{<%= prefix %>-basename}.ttf?v=@{<%= prefix %>-version}") format("truetype"), url("@{<%= prefix %>-path}@{<%= prefix %>-basename}.svg?v=@{<%= prefix %>-version}@{<%= prefix %>-svghash}") format("svg");
     font-weight: normal;
     font-style: normal;
   }
 }
 
-<%= prefix %>-icon(@type) {
-  &:extend(.<%= prefix %>-icon all);
-  @var: "@<%= prefix %>-icon-@{type}";
+.<%= prefix %>-icon(@type) {
+  &:extend(.<%= prefix %>-icon-base);
+  @var: "<%= prefix %>-icon-@{type}";
   content: @@var;
 }
 
-.<%= prefix %>-icon {
+.<%= prefix %>-icon-base {
   line-height: 1em;
-  font-family: <%= prefix %>['name'];
+  font-family: @<%= prefix %>-name;
   font-weight: normal;
   font-style: normal;
   display: inline-block;
