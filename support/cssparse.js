@@ -73,7 +73,11 @@ function readStdin(fn) {
 function stringparse (str) {
   try {
     if (str.match(/^'.*'$/) || str.match(/^".*"$/))
-      return eval(str);
+      return str
+        .replace(/^['"]/, '')
+        .replace(/['"]$/, '')
+        .replace(/\\'/, "'")
+        .replace(/\\"/, '"');
   } catch (e) { }
   return str;
 }
