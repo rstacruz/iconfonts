@@ -1,6 +1,7 @@
 // <%= name %> v<%= version %>
 // <%= site %>
 //
+// Stylus integration via https://github.com/rstacruz/iconfonts.
 // Usage:
 //
 //    <%= prefix %>-font();

@@ -1,6 +1,7 @@
 // <%= name %> v<%= version %>
 // <%= site %>
 //
+// Sass integration via https://github.com/rstacruz/iconfonts.
 // Usage:
 //
 //    @include <%= prefix %>-font;
