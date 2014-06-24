@@ -41,4 +41,11 @@ Adding icon sets
 Create `src/your_icon_set.json` by copying an existing `.json` file into your
 new set. Follow the instructions above.
 
+Releasing
+---------
 
+    bump package.json
+    npm test
+    vim History.md
+    npm publish
+    git release v0.1.0
