@@ -1,6 +1,12 @@
 # Icon fonts
 
-Icon fonts support for Sass, Less and Stylus.
+Fine-tuned icon fonts integration for Sass, Less and Stylus.
+
+Featuring the following icon sets:
+
+ * [Elusive](http://shoestrap.org/downloads/elusive-icons-webfont/)
+ * [FontAwesome](http://fontawesome.io)
+ * [Ionicons](http://ionicons.com/fonts)
 
 Install
 -------

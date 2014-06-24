@@ -46,17 +46,20 @@ $ion-nativesize: "32px"
 /*
  * Uses a given icon.
  *
- *     +ion-icon(music)
- *     +ion-icon(music, 24px)        /* 24px size */
+ *     .button:before
+ *       +ion-icon(music)
+ *       +ion-icon(music, 24px)        /* 24px size */
  *
  * You may specify a color.
  *
- *     +ion-icon(music, $color: #333)
+ *     .button:before
+ *       +ion-icon(music, $color: #333)
  *
  * You may also specify a `$top` value to compensate for any mis-alignment.
  * This nudges the icon by that many pixels from the top.
  *
- *     +ion-icon(music, $top: 2px)
+ *     .button:before
+ *       +ion-icon(music, $top: 2px)
  */
 
 = ion-icon(type, $size = auto, $color = auto, $top = auto, $left = auto, $shadow = none)
