@@ -1,30 +1,30 @@
 /*
-  <%= name %> v<%= version %>
-  <%= site %>
-  Usage:
-
-     @include <%= prefix %>-font;
-     .button:before {
-       @include <%= prefix %>-icon("arrow");
-       @include <%= prefix %>-icon("arrow", 14px, #333);
-     }
-
-  Output:
-
-     @font-face {
-       font-family: "<%= name %>"; ...
-     }
-     .button:before {
-       font-family: "<%= name %>";
-       content: '\f0123';
-     }
-
-  Icon files:
-
-      http<%= path %><%= basename %>.eot
-      http<%= path %><%= basename %>.ttf
-      http<%= path %><%= basename %>.woff
-      http<%= path %><%= basename %>.svg
+ * <%= name %> v<%= version %>
+ * <%= site %>
+ * Usage:
+ *
+ *    @include <%= prefix %>-font;
+ *    .button:before {
+ *      @include <%= prefix %>-icon("arrow");
+ *      @include <%= prefix %>-icon("arrow", 14px, #333);
+ *    }
+ *
+ * Output:
+ *
+ *    @font-face {
+ *      font-family: "<%= name %>"; ...
+ *    }
+ *    .button:before {
+ *      font-family: "<%= name %>";
+ *      content: '\f0123';
+ *    }
+ *
+ * Icon files:
+ *
+ *     <%= urlpath %><%= basename %>.eot
+ *     <%= urlpath %><%= basename %>.ttf
+ *     <%= urlpath %><%= basename %>.woff
+ *     <%= urlpath %><%= basename %>.svg
  */
 
 $<%= prefix %>-path: "<%= path %>"

@@ -9,4 +9,7 @@ data.each = function (fn) {
     if (icons.hasOwnProperty(key)) fn(icons[key], key);
 };
 
+data.urlpath = data.path;
+if (data.path.match(/^\/\//)) data.urlpath = 'http:'+data.path;
+
 console.log(template(data));
