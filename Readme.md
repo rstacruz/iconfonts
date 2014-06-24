@@ -1,8 +1,6 @@
 # Icon fonts
 
-Icon fonts.
-
-Support for Sass, Less and Stylus.
+Icon fonts support for Sass, Less and Stylus.
 
 Install
 -------
@@ -44,3 +42,13 @@ Setup
     
     button:before
       fa-icon("music", 14px)
+
+### Less
+
+    @import 'font-awesome';
+    .fa-font();
+    
+    button:before {
+      .fa-icon("music");
+      font-size: 14px;
+    }

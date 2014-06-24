@@ -1,7 +1,6 @@
 /*
   Elusive v1.4.1
   http://ionicons.com/fonts
-
   Usage:
 
      @include el-font;
@@ -44,22 +43,38 @@ $el-nativesize: "14px"
     font-weight: normal
     font-style: normal
 
-= el-icon(type, size = auto, color = auto, top = auto, left = auto, shadow = none)
+/*
+ * Uses a given icon.
+ *
+ *     +el-icon(music)
+ *     +el-icon(music, 24px)        /* 24px size */
+ *
+ * You may specify a color.
+ *
+ *     +el-icon(music, $color: #333)
+ *
+ * You may also specify a `$top` value to compensate for any mis-alignment.
+ * This nudges the icon by that many pixels from the top.
+ *
+ *     +el-icon(music, $top: 2px)
+ */
+
+= el-icon(type, $size = auto, $color = auto, $top = auto, $left = auto, $shadow = none)
   @extend %el-icon
   content: $el-icon-{type}
 
   unless size is "auto"
-    font-size: size
+    font-size: $size
   unless top is "auto"
     position: relative
-    top: top
+    top: $top
   unless left is "auto"
     position: relative
-    left: left
+    left: $left
   unless color is "auto"
-    color: color
+    color: $color
   unless shadow is "none"
-    text-shadow: shadow
+    text-shadow: $shadow
 
 %el-icon
   line-height: 1em

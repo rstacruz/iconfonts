@@ -46,6 +46,14 @@
   }
 }
 
+/*
+ * Uses a given icon.
+ *
+ *     .button:before {
+ *       ion-icon("music");
+ *     }
+ */
+
 .ion-icon(@type) {
   &:extend(.ion-icon-base);
   @var: "ion-icon-@{type}";

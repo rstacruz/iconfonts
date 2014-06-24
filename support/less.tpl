@@ -46,6 +46,14 @@
   }
 }
 
+/*
+ * Uses a given icon.
+ *
+ *     .button:before {
+ *       <%= prefix %>-icon("music");
+ *     }
+ */
+
 .<%= prefix %>-icon(@type) {
   &:extend(.<%= prefix %>-icon-base);
   @var: "<%= prefix %>-icon-@{type}";

@@ -46,6 +46,14 @@
   }
 }
 
+/*
+ * Uses a given icon.
+ *
+ *     .button:before {
+ *       el-icon("music");
+ *     }
+ */
+
 .el-icon(@type) {
   &:extend(.el-icon-base);
   @var: "el-icon-@{type}";

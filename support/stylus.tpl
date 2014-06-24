@@ -46,6 +46,25 @@
     font-weight: normal
     font-style: normal
 
+/*
+ * Uses a given icon.
+ *
+ *     .button:before
+ *       <%= prefix %>-icon("music")
+ *       <%= prefix %>-icon("music", 24px)        /* 24px size */
+ *
+ * You may specify a color.
+ *
+ *     .button:before
+ *       <%= prefix %>-icon("music", color: #333)
+ *
+ * You may also specify a `top` value to compensate for any mis-alignment.
+ * This nudges the icon by that many pixels from the top.
+ *
+ *     .button:before
+ *       <%= prefix %>-icon("music", top: 2px)
+ */
+
 <%= prefix %>-icon(type, size = auto, color = auto, top = auto, left = auto, shadow = none)
   @extend $<%= prefix %>-icon
   content: <%= prefix %>-icons[type]

@@ -1,7 +1,6 @@
 /*
   <%= name %> v<%= version %>
   <%= site %>
-
   Usage:
 
      @include <%= prefix %>-font;
@@ -44,22 +43,41 @@ $<%= prefix %>-nativesize: "<%= nativesize %>"
     font-weight: normal
     font-style: normal
 
-= <%= prefix %>-icon(type, size = auto, color = auto, top = auto, left = auto, shadow = none)
+/*
+ * Uses a given icon.
+ *
+ *     .button:before
+ *       +<%= prefix %>-icon(music)
+ *       +<%= prefix %>-icon(music, 24px)        /* 24px size */
+ *
+ * You may specify a color.
+ *
+ *     .button:before
+ *       +<%= prefix %>-icon(music, $color: #333)
+ *
+ * You may also specify a `$top` value to compensate for any mis-alignment.
+ * This nudges the icon by that many pixels from the top.
+ *
+ *     .button:before
+ *       +<%= prefix %>-icon(music, $top: 2px)
+ */
+
+= <%= prefix %>-icon(type, $size = auto, $color = auto, $top = auto, $left = auto, $shadow = none)
   @extend %<%= prefix %>-icon
   content: $<%= prefix %>-icon-{type}
 
   unless size is "auto"
-    font-size: size
+    font-size: $size
   unless top is "auto"
     position: relative
-    top: top
+    top: $top
   unless left is "auto"
     position: relative
-    left: left
+    left: $left
   unless color is "auto"
-    color: color
+    color: $color
   unless shadow is "none"
-    text-shadow: shadow
+    text-shadow: $shadow
 
 %<%= prefix %>-icon
   line-height: 1em
