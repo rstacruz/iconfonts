@@ -51,7 +51,7 @@ defines all the classes in one giant file.
 ```
 
 I prefer to not have them in my CSS files unless I need them. This project lets 
-you do thaht.
+you do that.
 
 ```
 /* Stylus */
