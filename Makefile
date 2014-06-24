@@ -32,9 +32,9 @@ test-stylus: stylesheets/ionicons.styl
 	@( cat $< ) | ${stylus} >/dev/null
 	@echo test-stylus : expect font-face to work
 	@( cat $< ; echo "ion-font()" ) | ${stylus} | grep "src: url(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.eot" >/dev/null
-	@( cat $< ; echo "+ion-font()" ) | ${stylus} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.woff" >/dev/null
-	@( cat $< ; echo "+ion-font()" ) | ${stylus} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.ttf" >/dev/null
-	@( cat $< ; echo "+ion-font()" ) | ${stylus} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.svg" >/dev/null
+	@( cat $< ; echo "ion-font()" ) | ${stylus} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.woff" >/dev/null
+	@( cat $< ; echo "ion-font()" ) | ${stylus} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.ttf" >/dev/null
+	@( cat $< ; echo "ion-font()" ) | ${stylus} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.svg" >/dev/null
 	@echo test-stylus : expect content to be set
 	@( cat $< ; echo "div\n  ion-icon('plus')" ) | ${stylus} | grep "content: \".f2" >/dev/null
 
