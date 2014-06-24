@@ -1,31 +1,30 @@
-/*
- * <%= name %> v<%= version %>
- * <%= site %>
- * Usage:
- *
- *    @include <%= prefix %>-font;
- *    .button:before {
- *      @include <%= prefix %>-icon("arrow");
- *      @include <%= prefix %>-icon("arrow", 14px, #333);
- *    }
- *
- * Output:
- *
- *    @font-face {
- *      font-family: "<%= name %>"; ...
- *    }
- *    .button:before {
- *      font-family: "<%= name %>";
- *      content: '\f0123';
- *    }
- *
- * Icon files:
- *
- *     <%= urlpath %><%= basename %>.eot
- *     <%= urlpath %><%= basename %>.ttf
- *     <%= urlpath %><%= basename %>.woff
- *     <%= urlpath %><%= basename %>.svg
- */
+// <%= name %> v<%= version %>
+// <%= site %>
+//
+// Usage:
+//
+//    @include <%= prefix %>-font;
+//    .button:before {
+//      @include <%= prefix %>-icon("arrow");
+//      @include <%= prefix %>-icon("arrow", 14px, #333);
+//    }
+//
+// Output:
+//
+//    @font-face {
+//      font-family: "<%= name %>"; ...
+//    }
+//    .button:before {
+//      font-family: "<%= name %>";
+//      content: '\f0123';
+//    }
+//
+// Icon files:
+//
+//     <%= urlpath %><%= basename %>.eot
+//     <%= urlpath %><%= basename %>.ttf
+//     <%= urlpath %><%= basename %>.woff
+//     <%= urlpath %><%= basename %>.svg
 
 $<%= prefix %>-path: "<%= path %>"
 $<%= prefix %>-name: "<%= name %>"
@@ -43,28 +42,26 @@ $<%= prefix %>-nativesize: "<%= nativesize %>"
     font-weight: normal
     font-style: normal
 
-/*
- * Uses a given icon.
- *
- *     .button:before
- *       +<%= prefix %>-icon(music)
- *       +<%= prefix %>-icon(music, 24px)        /* 24px size */
- *
- * You may specify a color.
- *
- *     .button:before
- *       +<%= prefix %>-icon(music, $color: #333)
- *
- * You may also specify a `$top` value to compensate for any mis-alignment.
- * This nudges the icon by that many pixels from the top.
- *
- *     .button:before
- *       +<%= prefix %>-icon(music, $top: 2px)
- */
+// Uses a given icon.
+//
+//     .button:before
+//       +<%= prefix %>-icon(music)
+//       +<%= prefix %>-icon(music, 24px)        /* 24px size */
+//
+// You may specify a color.
+//
+//     .button:before
+//       +<%= prefix %>-icon(music, $color: #333)
+//
+// You may also specify a `$top` value to compensate for any mis-alignment.
+// This nudges the icon by that many pixels from the top.
+//
+//     .button:before
+//       +<%= prefix %>-icon(music, $top: 2px)
 
-= <%= prefix %>-icon(type, $size = auto, $color = auto, $top = auto, $left = auto, $shadow = none)
+= <%= prefix %>-icon($type, $size: auto, $color: auto, $top: auto, $left: auto, $shadow: none)
   @extend %<%= prefix %>-icon
-  content: $<%= prefix %>-icon-{type}
+  @extend %<%= prefix %>-icon-#{$type}
 
   unless size is "auto"
     font-size: $size
@@ -90,6 +87,6 @@ $<%= prefix %>-nativesize: "<%= nativesize %>"
   text-rendering: optimizeLegibility !important
   -webkit-font-smoothing: antialiased !important
   -moz-osx-font-smoothing: grayscale
-
 <% each(function (val, key) { %>
-$<%= prefix %>-icon-<%= key %>: "<%= val %>";<% }); %>
+%<%= prefix %>-icon-<%= key %>
+  content: "<%= val %>"<% }); %>
