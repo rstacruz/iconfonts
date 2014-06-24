@@ -19,14 +19,14 @@ project.
 ### Bower
 
 Using bower makes files available via 
-`bower_components/iconfonts/stylesheets/___.sass`.
+`bower_components/iconfonts/stylesheets/___.scss`.
 
     bower install iconfonts
 
 ### NPM
 
 Using bower makes files available via 
-`node_modules/iconfonts/stylesheets/___.sass`.
+`node_modules/iconfonts/stylesheets/___.scss`.
 
     npm install iconfonts
 
@@ -36,7 +36,7 @@ Why is it needed?
 This lets you use CSS definitions only for the icons you need, on the elements
 that you need them.
 
-The Sass/CSS files that these fonts provide usually give you a lot of cruft, and 
+The CSS files that these fonts provide usually give you a lot of cruft, and 
 defines all the classes in one giant file.
 
 ```
@@ -66,18 +66,19 @@ you do thaht.
 Setup
 -----
 
-### Sass
+### SCSS
 
-``` sass
-@import font-awesome
+``` SCSS
+@import 'font-awesome';
 
-fa-font()
+fa-font();
 
-button:before
-  fa-icon("music", 14px)
+button:before {
+  @include fa-icon("music", 14px);
+}
 ```
 
-See [a Sass file](sytlesheets/ionicons.sass) for more info.
+See [a Sass file](sytlesheets/ionicons.scss) for more info.
 
 ### Stylus
 
