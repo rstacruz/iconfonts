@@ -2,7 +2,7 @@
   "name": "Ionicons",
   "version": "1.5.2",
   "prefix": "ion",
-  "site": "http://ionicons.com/fonts",
+  "site": "http://ionicons.com",
   "path": "//code.ionicframework.com/ionicons/1.5.2/fonts/",
   "basename": "ionicons",
   "svghash": "#Ionicons",

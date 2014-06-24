@@ -6,7 +6,7 @@ Featuring the following icon sets:
 
  * [Elusive](http://shoestrap.org/downloads/elusive-icons-webfont/)
  * [FontAwesome](http://fontawesome.io)
- * [Ionicons](http://ionicons.com/fonts)
+ * [Ionicons](http://ionicons.com)
  * [Foundation Icons General](http://zurb.com/playground/foundation-icon-fonts-3)
 
 Install
