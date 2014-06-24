@@ -29,26 +29,44 @@ Setup
 
 ### Sass
 
-    @import font-awesome
-    fa-font()
-    
-    button:before
-      fa-icon("music", 14px)
+``` sass
+@import font-awesome
+
+fa-font()
+
+button:before
+  fa-icon("music", 14px)
+```
+
+See [a Sass file](sytlesheets/ionicons.sass) for more info.
 
 ### Stylus
 
-    @import font-awesome
-    fa-font()
-    
-    button:before
-      fa-icon("music", 14px)
+``` sass
+@require font-awesome
+
+fa-font()
+
+button:before
+  fa-icon("music", 14px)
+```
+
+See [a stylus file](sytlesheets/ionicons.styl) for more info.
 
 ### Less
 
-    @import 'font-awesome';
-    .fa-font();
-    
-    button:before {
-      .fa-icon("music");
-      font-size: 14px;
-    }
+``` less
+@import 'font-awesome';
+.fa-font();
+
+button:before {
+  .fa-icon("music");
+  font-size: 14px;
+}
+```
+
+See [a less file](sytlesheets/ionicons.less) for more info.
+
+## Acknowledgements
+
+MIT licensed.
