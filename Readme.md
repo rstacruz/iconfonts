@@ -79,7 +79,7 @@ button:before {
 }
 ```
 
-See [a Sass file](sytlesheets/ionicons.scss) for more info.
+See [a Sass file](stylesheets/ionicons.scss) for more info.
 
 ### Stylus
 
@@ -92,7 +92,7 @@ button:before
   fa-icon("music", 14px)
 ```
 
-See [a stylus file](sytlesheets/ionicons.styl) for more info.
+See [a stylus file](stylesheets/ionicons.styl) for more info.
 
 ### Less
 
@@ -106,7 +106,7 @@ button:before {
 }
 ```
 
-See [a less file](sytlesheets/ionicons.less) for more info.
+See [a less file](stylesheets/ionicons.less) for more info.
 
 ## Acknowledgements
 
