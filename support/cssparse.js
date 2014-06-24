@@ -1,6 +1,9 @@
 /* jshint evil: true */
+
 /*
  * tool for parsing CSS.
+ *
+ *     node support/cssparse.js < hello.css
  */
 
 var _ = require('underscore'),
