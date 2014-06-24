@@ -1,4 +1,7 @@
 /*
+  <%= name %> v<%= version %>
+  <%= site %>
+
   Usage:
 
      <%= prefix %>-font();
@@ -16,6 +19,13 @@
        font-family: "<%= name %>";
        content: '\f0123';
      }
+
+  Icon files:
+
+      http<%= path %><%= basename %>.eot
+      http<%= path %><%= basename %>.ttf
+      http<%= path %><%= basename %>.woff
+      http<%= path %><%= basename %>.svg
  */
 
 <%= prefix %> = {
