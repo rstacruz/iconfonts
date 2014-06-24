@@ -4,6 +4,7 @@ scssfiles = $(patsubst src/%.json, stylesheets/%.scss, ${srcfiles})
 lessfiles = $(patsubst src/%.json, stylesheets/%.less, ${srcfiles})
 stylus = ./node_modules/.bin/stylus
 lessc = ./node_modules/.bin/lessc
+sass = sass --scss
 
 all: ${stylfiles} ${scssfiles} ${lessfiles} support/icons.json
 
@@ -39,14 +40,14 @@ test-stylus: stylesheets/ionicons.styl
 
 test-scss: stylesheets/ionicons.scss
 	@echo test-scss : works
-	@( cat $< ) | sass --scss >/dev/null
+	@( cat $< ) | ${sass} >/dev/null
 	@echo test-scss : expect font-face to work
-	@( cat $< ; echo "@include ion-font();" ) | sass --scss | grep -E "src: url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.eot" >/dev/null
-	@( cat $< ; echo "@include ion-font();" ) | sass --scss | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.woff" >/dev/null
-	@( cat $< ; echo "@include ion-font();" ) | sass --scss | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.ttf" >/dev/null
-	@( cat $< ; echo "@include ion-font();" ) | sass --scss | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.svg" >/dev/null
+	@( cat $< ; echo "@include ion-font();" ) | ${sass} | grep -E "src: url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.eot" >/dev/null
+	@( cat $< ; echo "@include ion-font();" ) | ${sass} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.woff" >/dev/null
+	@( cat $< ; echo "@include ion-font();" ) | ${sass} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.ttf" >/dev/null
+	@( cat $< ; echo "@include ion-font();" ) | ${sass} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.svg" >/dev/null
 	@echo test-scss : expect content to be set
-	@( cat $< ; echo "div { @include ion-icon('plus'); }" ) | sass --scss | grep "content: \".f2" >/dev/null
+	@( cat $< ; echo "div { @include ion-icon('plus'); }" ) | ${sass} | grep "content: \".f2" >/dev/null
 
 test-less: stylesheets/ionicons.less
 	@echo test-less : works

@@ -13,5 +13,9 @@
     "css": "^2.0.0",
     "stylus": "^0.46.3",
     "less": "^1.7.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rstacruz/iconfonts.git"
   }
 }
