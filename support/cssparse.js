@@ -1,3 +1,4 @@
+/* jshint evil: true */
 /*
  * tool for parsing CSS.
  */
@@ -12,11 +13,23 @@ readStdin(function (e, input) {
   if (!doc || doc.type !== 'stylesheet')
     throw new Error("not a stylesheet");
 
-  out = extractIcons(doc);
-  out = sortKeys(out);
+  out = {};
+  out.name = extractName(doc);
+  out.icons = extractIcons(doc);
+  out.icons = sortKeys(out.icons);
 
   console.log(JSON.stringify(out, null, 2));
 });
+
+function extractName (doc) {
+  var fontface = _(doc.stylesheet.rules).find(function (r) { return r.type === 'font-face'; });
+  if (!fontface) return;
+
+  var fontfamily = _(fontface.declarations).find(function (d) { return d.type === 'declaration'; });
+  if (!fontfamily) return;
+
+  return stringparse(fontfamily.value);
+}
 
 function extractIcons (doc) {
   var out = {};
@@ -27,7 +40,7 @@ function extractIcons (doc) {
       selectors = rule.selectors;
 
     if (content && selectors[0].match(/:before$/)) {
-      var val = JSON.parse(content.value);
+      var val = stringparse(content.value);
       selectors.forEach(function (sel) {
         sel = sel.replace(/^\.[a-z]+-(.*):before$/, '$1');
         out[sel] = val;
@@ -52,4 +65,12 @@ function readStdin(fn) {
   var data = '';
   process.stdin.on('data', function(chunk) { data += chunk.toString(); });
   process.stdin.on('end', function() { fn(null, data); });
+}
+
+function stringparse (str) {
+  try {
+    if (str.match(/^'.*'$/) || str.match(/^".*"$/))
+      return eval(str);
+  } catch (e) { }
+  return str;
 }
