@@ -8,7 +8,8 @@
   },
   "author": "",
   "license": "MIT",
-  "dependencies": {
-    "underscore": "^1.6.0"
+  "devDependencies": {
+    "underscore": "^1.6.0",
+    "css": "^2.0.0"
   }
 }
