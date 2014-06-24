@@ -1,32 +1,29 @@
-/*
-  Elusive v1.5.0
-  http://shoestrap.org/downloads/elusive-icons-webfont/
-
-  Usage:
-
-     .el-font();
-     .button:before {
-       .el-icon("arrow");
-     }
-
-  Output:
-
-     @font-face {
-       font-family: "Elusive"; ...
-     }
-     .button:before {
-       font-family: "Elusive";
-       content: '\f0123';
-     }
-
-  Icon files:
-
-      httphttp://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.eot
-      httphttp://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.ttf
-      httphttp://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.woff
-      httphttp://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.svg
-
- */
+// Elusive v1.5.0
+// http://shoestrap.org/downloads/elusive-icons-webfont/
+// 
+// Usage:
+// 
+//    .el-font();
+//    .button:before {
+//      .el-icon("arrow");
+//    }
+// 
+// Output:
+// 
+//    @font-face {
+//      font-family: "Elusive"; ...
+//    }
+//    .button:before {
+//      font-family: "Elusive";
+//      content: '\f0123';
+//    }
+// 
+// Icon files:
+// 
+//     http://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.eot
+//     http://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.ttf
+//     http://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.woff
+//     http://aristath.github.io/elusive-iconfont/assets/elusive-font/font/Elusive-Icons.svg
 
 @el-path: "http://aristath.github.io/elusive-iconfont/assets/elusive-font/font/";
 @el-name: "Elusive";
@@ -39,8 +36,8 @@
 .el-font() {
   @font-face {
     font-family: @el-name;
-    src: url("@el-path@{el-basename}.eot?v=@{el-version}");
-    src: url("@el-path@{el-basename}.eot?#iefix&v=@{el-version}") format("embedded-opentype"), url("@{el-path}@{el-basename}.woff?v=@el-version}") format("woff"), url("@{el-path}@{el-basename}.ttf?v=@{el-version}") format("truetype"), url("@{el-path}@{el-basename}.svg?v=@{el-version}@{el-svghash}") format("svg");
+    src: url("@{el-path}@{el-basename}.eot?v=@{el-version}");
+    src: url("@{el-path}@{el-basename}.eot?#iefix&v=@{el-version}") format("embedded-opentype"), url("@{el-path}@{el-basename}.woff?v=@el-version}") format("woff"), url("@{el-path}@{el-basename}.ttf?v=@{el-version}") format("truetype"), url("@{el-path}@{el-basename}.svg?v=@{el-version}@{el-svghash}") format("svg");
     font-weight: normal;
     font-style: normal;
   }

@@ -1,32 +1,29 @@
-/*
-  Ionicons v1.5.2
-  http://ionicons.com/fonts
-
-  Usage:
-
-     .ion-font();
-     .button:before {
-       .ion-icon("arrow");
-     }
-
-  Output:
-
-     @font-face {
-       font-family: "Ionicons"; ...
-     }
-     .button:before {
-       font-family: "Ionicons";
-       content: '\f0123';
-     }
-
-  Icon files:
-
-      http//code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.eot
-      http//code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.ttf
-      http//code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.woff
-      http//code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.svg
-
- */
+// Ionicons v1.5.2
+// http://ionicons.com/fonts
+// 
+// Usage:
+// 
+//    .ion-font();
+//    .button:before {
+//      .ion-icon("arrow");
+//    }
+// 
+// Output:
+// 
+//    @font-face {
+//      font-family: "Ionicons"; ...
+//    }
+//    .button:before {
+//      font-family: "Ionicons";
+//      content: '\f0123';
+//    }
+// 
+// Icon files:
+// 
+//     http://code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.eot
+//     http://code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.ttf
+//     http://code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.woff
+//     http://code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.svg
 
 @ion-path: "//code.ionicframework.com/ionicons/1.5.2/fonts/";
 @ion-name: "Ionicons";
@@ -39,8 +36,8 @@
 .ion-font() {
   @font-face {
     font-family: @ion-name;
-    src: url("@ion-path@{ion-basename}.eot?v=@{ion-version}");
-    src: url("@ion-path@{ion-basename}.eot?#iefix&v=@{ion-version}") format("embedded-opentype"), url("@{ion-path}@{ion-basename}.woff?v=@ion-version}") format("woff"), url("@{ion-path}@{ion-basename}.ttf?v=@{ion-version}") format("truetype"), url("@{ion-path}@{ion-basename}.svg?v=@{ion-version}@{ion-svghash}") format("svg");
+    src: url("@{ion-path}@{ion-basename}.eot?v=@{ion-version}");
+    src: url("@{ion-path}@{ion-basename}.eot?#iefix&v=@{ion-version}") format("embedded-opentype"), url("@{ion-path}@{ion-basename}.woff?v=@ion-version}") format("woff"), url("@{ion-path}@{ion-basename}.ttf?v=@{ion-version}") format("truetype"), url("@{ion-path}@{ion-basename}.svg?v=@{ion-version}@{ion-svghash}") format("svg");
     font-weight: normal;
     font-style: normal;
   }
