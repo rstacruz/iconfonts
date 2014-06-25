@@ -119,3 +119,6 @@ Authored and maintained by Rico Sta. Cruz with help from [contributors].
 
 [MIT License]: http://mit-license.org/
 [contributors]: http://github.com/rstacruz/iconfonts/contributors
+
+[![Status](https://travis-ci.org/rstacruz/iconfonts.svg?branch=master)](https://travis-ci.org/rstacruz/iconfonts)
+[![npm version](https://img.shields.io/npm/v/iconfonts.png)](https://npmjs.org/package/iconfonts "View this project on npm")
