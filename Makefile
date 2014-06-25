@@ -61,13 +61,13 @@ test-node-sass: stylesheets/ionicons.scss
 	@cat _test.css | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.woff" >/dev/null
 	@cat _test.css | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.ttf" >/dev/null
 	@cat _test.css | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.svg" >/dev/null
-	@rm _test.{,s}css
+	@rm -f _test.css _test.scss
 	@
 	@echo test-node-sass : content
 	@( cat $< ; echo "div { @include ion-icon('plus'); }" ) > _test.scss
 	@${nodesass} _test.scss 2>/dev/null
 	@cat _test.css | grep -E "content: \".f2" >/dev/null
-	@rm _test.{,s}css
+	@rm -f _test.css _test.scss
 
 test-less: stylesheets/ionicons.less
 	@echo test-less : works

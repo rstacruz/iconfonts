@@ -1,16 +1,17 @@
 Dev notes
 =========
 
-* to update iconsets, update `src/icons.json`.
+* __Don't edit `stylesheets/*`.__ They are generated from source files.
+* To update iconsets, update `src/icons.json`.
 * to add iconsets, just add the file in `src/`.
-* `stylesheets/*` are generated from source files.
 
 Rebuilding
 ----------
 
     make -B
 
-(`-B` is essentially to force regenerations - not usually needed but its a good idea.)
+(`-B` is essentially to force regenerations - not usually needed, but its a good 
+idea.)
 
 Testing
 -------
