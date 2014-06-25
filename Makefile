@@ -4,6 +4,7 @@ scssfiles = $(patsubst src/%.json, stylesheets/%.scss, ${srcfiles})
 lessfiles = $(patsubst src/%.json, stylesheets/%.less, ${srcfiles})
 stylus = ./node_modules/.bin/stylus
 lessc = ./node_modules/.bin/lessc
+nodesass = ./node_modules/.bin/node-sass
 sass = sass --scss
 
 all: ${stylfiles} ${scssfiles} ${lessfiles} support/icons.json
@@ -24,7 +25,7 @@ support/icons.json: ${srcfiles}
 	@echo + $@
 	@node support/merge.js $^ > $@
 
-test: test-scss test-stylus test-less
+test: test-node-sass test-stylus test-less
 
 test-stylus: stylesheets/ionicons.styl
 	@npm install
@@ -48,6 +49,25 @@ test-scss: stylesheets/ionicons.scss
 	@( cat $< ; echo "@include ion-font();" ) | ${sass} | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.svg" >/dev/null
 	@echo test-scss : expect content to be set
 	@( cat $< ; echo "div { @include ion-icon('plus'); }" ) | ${sass} | grep "content: \".f2" >/dev/null
+
+test-node-sass: stylesheets/ionicons.scss
+	@echo test-node-sass : works
+	@${nodesass} "$<" 2>/dev/null && rm ionicons.css
+	@
+	@echo test-node-sass : font-face
+	@( cat $< ; echo "@include ion-font();" ) > _test.scss
+	@${nodesass} _test.scss 2>/dev/null
+	@cat _test.css | grep -E "src: url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.eot" >/dev/null
+	@cat _test.css | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.woff" >/dev/null
+	@cat _test.css | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.ttf" >/dev/null
+	@cat _test.css | grep -E "url\(\"//code.ionicframework.com/ionicons/...../fonts/ionicons.svg" >/dev/null
+	@rm _test.{,s}css
+	@
+	@echo test-node-sass : content
+	@( cat $< ; echo "div { @include ion-icon('plus'); }" ) > _test.scss
+	@${nodesass} _test.scss 2>/dev/null
+	@cat _test.css | grep -E "content: \".f2" >/dev/null
+	@rm _test.{,s}css
 
 test-less: stylesheets/ionicons.less
 	@echo test-less : works
