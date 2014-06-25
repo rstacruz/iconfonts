@@ -69,14 +69,22 @@ Setup
 
 ### SCSS
 
-``` SCSS
+``` scss
 @import 'font-awesome';
 
-fa-font();
+/* embeds the @font-face. use this only once. */
+@include fa-font();
 
 button:before {
   @include fa-icon("music", 14px);
 }
+```
+
+If you're on Rails (with [sass-rails]), use `xx-font-rails()` instead of 
+`xx-font()`:
+
+``` scss
+@include fa-font-rails();
 ```
 
 See [a Sass file](stylesheets/ionicons.scss) for more info.
@@ -107,6 +115,8 @@ button:before {
 ```
 
 See [a less file](stylesheets/ionicons.less) for more info.
+
+[sass-rails]: https://github.com/rails/sass-rails
 
 ## Thanks
 

@@ -27,22 +27,38 @@
 //     <%= urlpath %><%= basename %>.woff
 //     <%= urlpath %><%= basename %>.svg
 
-$<%= prefix %>-path: "<%= path %>";
-$<%= prefix %>-name: "<%= name %>";
-$<%= prefix %>-site: "<%= site %>";
-$<%= prefix %>-basename: "<%= basename %>";
-$<%= prefix %>-version: "<%= version %>";
-$<%= prefix %>-svghash: "<%= svghash %>";
-$<%= prefix %>-nativesize: "<%= nativesize %>";
+$<%= prefix %>-path: "<%= path %>" !default;
+$<%= prefix %>-name: "<%= name %>" !default;
+$<%= prefix %>-site: "<%= site %>" !default;
+$<%= prefix %>-basename: "<%= basename %>" !default;
+$<%= prefix %>-version: "<%= version %>" !default;
+$<%= prefix %>-svghash: "<%= svghash %>" !default;
+$<%= prefix %>-nativesize: "<%= nativesize %>" !default;
 
+// Embeds the @font-face.
 @mixin <%= prefix %>-font {
   @font-face {
     font-family: $<%= prefix %>-name;
-    src: url($<%= prefix %>-path + $<%= prefix %>-basename + '.eot?v=' + $<%= prefix %>-version);
-    src: url($<%= prefix %>-path + $<%= prefix %>-basename + '.eot?#iefix&v=' + $<%= prefix %>-version) format("embedded-opentype"),
+    src: url($<%= prefix %>-path + $<%= prefix %>-basename + ".eot?v=" + $<%= prefix %>-version);
+    src: url($<%= prefix %>-path + $<%= prefix %>-basename + ".eot?#iefix&v=" + $<%= prefix %>-version) format("embedded-opentype"),
          url($<%= prefix %>-path + $<%= prefix %>-basename + ".woff?v=" + $<%= prefix %>-version) format("woff"),
          url($<%= prefix %>-path + $<%= prefix %>-basename + ".ttf?v=" + $<%= prefix %>-version) format("truetype"),
          url($<%= prefix %>-path + $<%= prefix %>-basename + ".svg?v=" + $<%= prefix %>-version + $<%= prefix %>-svghash) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// Embeds the @font-face. Use this if you're using `sass-rails`.
+@mixin <%= prefix %>-font-rails {
+  $<%= prefix %>-path: "" !default;
+  @font-face {
+    font-family: $<%= prefix %>-name;
+    src: font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".eot");
+    src: font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".eot#iefix") format("embedded-opentype"),
+         font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".woff") format("woff"),
+         font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".ttf") format("truetype"),
+         font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".svg" + $<%= prefix %>-svghash) format("svg");
     font-weight: normal;
     font-style: normal;
   }
