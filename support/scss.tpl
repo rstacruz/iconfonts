@@ -50,15 +50,15 @@ $<%= prefix %>-nativesize: "<%= nativesize %>" !default;
 }
 
 // Embeds the @font-face. Use this if you're using `sass-rails`.
-@mixin <%= prefix %>-font-rails {
+@mixin <%= prefix %>-font-rails($prefix: "") {
   $<%= prefix %>-path: "" !default;
   @font-face {
     font-family: $<%= prefix %>-name;
-    src: font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".eot");
-    src: font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".eot#iefix") format("embedded-opentype"),
-         font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".woff") format("woff"),
-         font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".ttf") format("truetype"),
-         font-url($<%= prefix %>-path + $<%= prefix %>-basename + ".svg" + $<%= prefix %>-svghash) format("svg");
+    src: font-url($prefix + $<%= prefix %>-basename + ".eot");
+    src: font-url($prefix + $<%= prefix %>-basename + ".eot#iefix") format("embedded-opentype"),
+         font-url($prefix + $<%= prefix %>-basename + ".woff") format("woff"),
+         font-url($prefix + $<%= prefix %>-basename + ".ttf") format("truetype"),
+         font-url($prefix + $<%= prefix %>-basename + ".svg" + $<%= prefix %>-svghash) format("svg");
     font-weight: normal;
     font-style: normal;
   }

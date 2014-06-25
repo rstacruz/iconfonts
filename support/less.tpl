@@ -34,6 +34,7 @@
 @<%= prefix %>-svghash: "<%= svghash %>";
 @<%= prefix %>-nativesize: "<%= nativesize %>";
 
+// Embeds the @font-face.
 .<%= prefix %>-font() {
   @font-face {
     font-family: @<%= prefix %>-name;
@@ -42,6 +43,20 @@
          url("@{<%= prefix %>-path}@{<%= prefix %>-basename}.woff?v=@<%= prefix %>-version}") format("woff"),
          url("@{<%= prefix %>-path}@{<%= prefix %>-basename}.ttf?v=@{<%= prefix %>-version}") format("truetype"),
          url("@{<%= prefix %>-path}@{<%= prefix %>-basename}.svg?v=@{<%= prefix %>-version}@{<%= prefix %>-svghash}") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// Embeds the @font-face. Use this if you're using `less-rails`.
+.<%= prefix %>-font-rails(@prefix: "") {
+  @font-face {
+    font-family: @<%= prefix %>-name;
+    src: font-url("@{prefix}@{<%= prefix %>-basename}.eot");
+    src: font-url("@{prefix}@{<%= prefix %>-basename}.eot?#iefix") format("embedded-opentype"),
+         font-url("@{prefix}@{<%= prefix %>-basename}.woff") format("woff"),
+         font-url("@{prefix}@{<%= prefix %>-basename}.ttf") format("truetype"),
+         font-url("@{prefix}@{<%= prefix %>-basename}.svg@{<%= prefix %>-svghash}") format("svg");
     font-weight: normal;
     font-style: normal;
   }

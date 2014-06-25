@@ -27,22 +27,38 @@
 //     https://cdn.rawgit.com/zurb/foundation-icons/master/foundation_icons_general/fonts/general_foundicons.woff
 //     https://cdn.rawgit.com/zurb/foundation-icons/master/foundation_icons_general/fonts/general_foundicons.svg
 
-$fig-path: "https://cdn.rawgit.com/zurb/foundation-icons/master/foundation_icons_general/fonts/";
-$fig-name: "GeneralFoundicons";
-$fig-site: "http://zurb.com/playground/foundation-icon-fonts-3";
-$fig-basename: "general_foundicons";
-$fig-version: "1.5.2";
-$fig-svghash: "#GeneralFoundicons";
-$fig-nativesize: "32px";
+$fig-path: "https://cdn.rawgit.com/zurb/foundation-icons/master/foundation_icons_general/fonts/" !default;
+$fig-name: "GeneralFoundicons" !default;
+$fig-site: "http://zurb.com/playground/foundation-icon-fonts-3" !default;
+$fig-basename: "general_foundicons" !default;
+$fig-version: "1.5.2" !default;
+$fig-svghash: "#GeneralFoundicons" !default;
+$fig-nativesize: "32px" !default;
 
+// Embeds the @font-face.
 @mixin fig-font {
   @font-face {
     font-family: $fig-name;
-    src: url($fig-path + $fig-basename + '.eot?v=' + $fig-version);
-    src: url($fig-path + $fig-basename + '.eot?#iefix&v=' + $fig-version) format("embedded-opentype"),
+    src: url($fig-path + $fig-basename + ".eot?v=" + $fig-version);
+    src: url($fig-path + $fig-basename + ".eot?#iefix&v=" + $fig-version) format("embedded-opentype"),
          url($fig-path + $fig-basename + ".woff?v=" + $fig-version) format("woff"),
          url($fig-path + $fig-basename + ".ttf?v=" + $fig-version) format("truetype"),
          url($fig-path + $fig-basename + ".svg?v=" + $fig-version + $fig-svghash) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// Embeds the @font-face. Use this if you're using `sass-rails`.
+@mixin fig-font-rails($prefix: "") {
+  $fig-path: "" !default;
+  @font-face {
+    font-family: $fig-name;
+    src: font-url($prefix + $fig-basename + ".eot");
+    src: font-url($prefix + $fig-basename + ".eot#iefix") format("embedded-opentype"),
+         font-url($prefix + $fig-basename + ".woff") format("woff"),
+         font-url($prefix + $fig-basename + ".ttf") format("truetype"),
+         font-url($prefix + $fig-basename + ".svg" + $fig-svghash) format("svg");
     font-weight: normal;
     font-style: normal;
   }

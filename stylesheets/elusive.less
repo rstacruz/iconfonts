@@ -34,6 +34,7 @@
 @el-svghash: "#Elusive-Icons";
 @el-nativesize: "14px";
 
+// Embeds the @font-face.
 .el-font() {
   @font-face {
     font-family: @el-name;
@@ -42,6 +43,20 @@
          url("@{el-path}@{el-basename}.woff?v=@el-version}") format("woff"),
          url("@{el-path}@{el-basename}.ttf?v=@{el-version}") format("truetype"),
          url("@{el-path}@{el-basename}.svg?v=@{el-version}@{el-svghash}") format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// Embeds the @font-face. Use this if you're using `less-rails`.
+.el-font-rails(@prefix: "") {
+  @font-face {
+    font-family: @el-name;
+    src: font-url("@{prefix}@{el-basename}.eot");
+    src: font-url("@{prefix}@{el-basename}.eot?#iefix") format("embedded-opentype"),
+         font-url("@{prefix}@{el-basename}.woff") format("woff"),
+         font-url("@{prefix}@{el-basename}.ttf") format("truetype"),
+         font-url("@{prefix}@{el-basename}.svg@{el-svghash}") format("svg");
     font-weight: normal;
     font-style: normal;
   }

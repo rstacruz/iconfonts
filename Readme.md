@@ -67,7 +67,7 @@ you do that.
 Setup
 -----
 
-### SCSS
+#### SCSS
 
 ``` scss
 @import 'font-awesome';
@@ -80,16 +80,21 @@ button:before {
 }
 ```
 
-If you're on Rails (with [sass-rails]), use `xx-font-rails()` instead of 
-`xx-font()`:
+See [a Sass file](stylesheets/ionicons.scss) for more info.
+
+#### SCSS on Rails
+
+If you're on Rails (with [sass-rails]) and prefer to keep the files in your 
+project, download the font files to `vendor/assets/images/`. Afterwards, use
+`xx-font-rails()` instead of `xx-font()` to embed the @font-face.  Usage is 
+otherwise the same as above.
 
 ``` scss
+@import 'font-awesome';
 @include fa-font-rails();
 ```
 
-See [a Sass file](stylesheets/ionicons.scss) for more info.
-
-### Stylus
+#### Stylus
 
 ``` sass
 @require font-awesome
@@ -102,7 +107,7 @@ button:before
 
 See [a stylus file](stylesheets/ionicons.styl) for more info.
 
-### Less
+#### Less
 
 ``` less
 @import 'font-awesome';
@@ -116,7 +121,20 @@ button:before {
 
 See [a less file](stylesheets/ionicons.less) for more info.
 
+#### Less on Rails
+
+If you're on Rails (with [less-rails]) and prefer to keep the files in your 
+project, download the font files to `vendor/assets/images/`. Afterwards, use
+`xx-font-rails()` instead of `xx-font()` to embed the @font-face.  Usage is 
+otherwise the same as above.
+
+``` scss
+@import 'font-awesome';
+.fa-font-rails();
+```
+
 [sass-rails]: https://github.com/rails/sass-rails
+[less-rails]: https://github.com/metaskills/less-rails
 
 ## Thanks
 

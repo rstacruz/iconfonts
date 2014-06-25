@@ -27,22 +27,38 @@
 //     http://code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.woff
 //     http://code.ionicframework.com/ionicons/1.5.2/fonts/ionicons.svg
 
-$ion-path: "//code.ionicframework.com/ionicons/1.5.2/fonts/";
-$ion-name: "Ionicons";
-$ion-site: "http://ionicons.com";
-$ion-basename: "ionicons";
-$ion-version: "1.5.2";
-$ion-svghash: "#Ionicons";
-$ion-nativesize: "32px";
+$ion-path: "//code.ionicframework.com/ionicons/1.5.2/fonts/" !default;
+$ion-name: "Ionicons" !default;
+$ion-site: "http://ionicons.com" !default;
+$ion-basename: "ionicons" !default;
+$ion-version: "1.5.2" !default;
+$ion-svghash: "#Ionicons" !default;
+$ion-nativesize: "32px" !default;
 
+// Embeds the @font-face.
 @mixin ion-font {
   @font-face {
     font-family: $ion-name;
-    src: url($ion-path + $ion-basename + '.eot?v=' + $ion-version);
-    src: url($ion-path + $ion-basename + '.eot?#iefix&v=' + $ion-version) format("embedded-opentype"),
+    src: url($ion-path + $ion-basename + ".eot?v=" + $ion-version);
+    src: url($ion-path + $ion-basename + ".eot?#iefix&v=" + $ion-version) format("embedded-opentype"),
          url($ion-path + $ion-basename + ".woff?v=" + $ion-version) format("woff"),
          url($ion-path + $ion-basename + ".ttf?v=" + $ion-version) format("truetype"),
          url($ion-path + $ion-basename + ".svg?v=" + $ion-version + $ion-svghash) format("svg");
+    font-weight: normal;
+    font-style: normal;
+  }
+}
+
+// Embeds the @font-face. Use this if you're using `sass-rails`.
+@mixin ion-font-rails($prefix: "") {
+  $ion-path: "" !default;
+  @font-face {
+    font-family: $ion-name;
+    src: font-url($prefix + $ion-basename + ".eot");
+    src: font-url($prefix + $ion-basename + ".eot#iefix") format("embedded-opentype"),
+         font-url($prefix + $ion-basename + ".woff") format("woff"),
+         font-url($prefix + $ion-basename + ".ttf") format("truetype"),
+         font-url($prefix + $ion-basename + ".svg" + $ion-svghash) format("svg");
     font-weight: normal;
     font-style: normal;
   }
