@@ -2,6 +2,7 @@
 
  * Update file comments to link to project page.
  * Ionicons: update comments to point to correct site URL.
+ * SCSS: add `xxx-font-rails()` mixin for Rails integration.
 
 ## v0.1.0 - June 24, 2014
 
