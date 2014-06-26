@@ -1,4 +1,4 @@
-## v0.1.1 - unrelesaed
+## v0.2.0 - June 26, 2014
 
  * Update file comments to link to project page.
  * Ionicons: update comments to point to correct site URL.
