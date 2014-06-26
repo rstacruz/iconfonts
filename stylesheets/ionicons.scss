@@ -51,7 +51,6 @@ $ion-nativesize: "32px" !default;
 
 // Embeds the @font-face. Use this if you're using `sass-rails`.
 @mixin ion-font-rails($prefix: "") {
-  $ion-path: "" !default;
   @font-face {
     font-family: $ion-name;
     src: font-url($prefix + $ion-basename + ".eot");

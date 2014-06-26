@@ -51,7 +51,6 @@ $fa-nativesize: "14px" !default;
 
 // Embeds the @font-face. Use this if you're using `sass-rails`.
 @mixin fa-font-rails($prefix: "") {
-  $fa-path: "" !default;
   @font-face {
     font-family: $fa-name;
     src: font-url($prefix + $fa-basename + ".eot");

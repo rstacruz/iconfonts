@@ -51,7 +51,6 @@ $el-nativesize: "14px" !default;
 
 // Embeds the @font-face. Use this if you're using `sass-rails`.
 @mixin el-font-rails($prefix: "") {
-  $el-path: "" !default;
   @font-face {
     font-family: $el-name;
     src: font-url($prefix + $el-basename + ".eot");

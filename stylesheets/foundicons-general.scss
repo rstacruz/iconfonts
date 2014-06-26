@@ -51,7 +51,6 @@ $fig-nativesize: "32px" !default;
 
 // Embeds the @font-face. Use this if you're using `sass-rails`.
 @mixin fig-font-rails($prefix: "") {
-  $fig-path: "" !default;
   @font-face {
     font-family: $fig-name;
     src: font-url($prefix + $fig-basename + ".eot");
