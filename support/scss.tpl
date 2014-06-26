@@ -51,7 +51,6 @@ $<%= prefix %>-nativesize: "<%= nativesize %>" !default;
 
 // Embeds the @font-face. Use this if you're using `sass-rails`.
 @mixin <%= prefix %>-font-rails($prefix: "") {
-  $<%= prefix %>-path: "" !default;
   @font-face {
     font-family: $<%= prefix %>-name;
     src: font-url($prefix + $<%= prefix %>-basename + ".eot");
