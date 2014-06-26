@@ -1,6 +1,11 @@
+## v0.3.0 - unreleased
+
+ * SCSS: Remove an extra variable definition that's not needed.
+
 ## v0.2.0 - June 26, 2014
 
  * Update file comments to link to project page.
+ * Officially support node-sass.
  * Ionicons: update comments to point to correct site URL.
  * SCSS: add `xxx-font-rails()` mixin for Rails integration.
  * Less: add `xxx-font-rails()` mixin for Rails integration.
