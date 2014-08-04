@@ -45,8 +45,8 @@ new set. Follow the instructions above.
 Releasing
 ---------
 
-    bump package.json
+    bump *.json
     npm test
     vim History.md
-    npm publish
     git release v0.1.0
+    npm publish

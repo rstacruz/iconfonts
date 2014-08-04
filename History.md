@@ -1,6 +1,7 @@
-## v0.3.0 - unreleased
+## v0.3.0 - August 4, 2014
 
  * SCSS: Remove an extra variable definition that's not needed.
+ * Released to the Bower registry.
 
 ## v0.2.0 - June 26, 2014
 
