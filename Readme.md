@@ -1,13 +1,13 @@
 # Icon fonts
 
-Fine-tuned icon fonts integration for Sass, Less and Stylus.
-
-Featuring the following icon sets:
+Fine-tuned icon fonts integration for Sass, Less and Stylus. Features the following icon sets:
 
  * [Elusive](http://shoestrap.org/downloads/elusive-icons-webfont/)
  * [FontAwesome](http://fontawesome.io)
  * [Ionicons](http://ionicons.com)
  * [Foundation Icons General](http://zurb.com/playground/foundation-icon-fonts-3)
+
+[![Status](https://travis-ci.org/rstacruz/iconfonts.svg?branch=master)](https://travis-ci.org/rstacruz/iconfonts)
 
 Install
 -------
@@ -31,11 +31,13 @@ In your less/sass/styl files:
 
 Using npm makes files available via `node_modules/iconfonts/stylesheets/`.
 
-    npm install iconfonts
+    $ npm install iconfonts
 
 In your less/sass/styl files:
 
     @include '../node_modules/iconfonts/stylesheets/ionicons';
+
+[![npm version](https://badge.fury.io/js/iconfonts.svg)](https://npmjs.org/package/iconfonts "View this project on npm")
 
 Why is it needed?
 -----------------
@@ -153,6 +155,3 @@ Authored and maintained by Rico Sta. Cruz with help from [contributors].
 
 [MIT License]: http://mit-license.org/
 [contributors]: http://github.com/rstacruz/iconfonts/contributors
-
-[![Status](https://travis-ci.org/rstacruz/iconfonts.svg?branch=master)](https://travis-ci.org/rstacruz/iconfonts)
-[![npm version](https://img.shields.io/npm/v/iconfonts.png)](https://npmjs.org/package/iconfonts "View this project on npm")
