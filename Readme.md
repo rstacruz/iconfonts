@@ -9,17 +9,13 @@ Fine-tuned icon fonts integration for Sass, Less and Stylus. Features the follow
 
 [![Status](https://travis-ci.org/rstacruz/iconfonts.svg?branch=master)](https://travis-ci.org/rstacruz/iconfonts)
 
-Install
--------
+Installation
+------------
 
-### Manual
-
-Get the files you need over at [/stylesheets/](stylesheets) and put it in your 
+__Manual:__ Get the files you need over at [/stylesheets/](stylesheets) and put it in your 
 project.
 
-### Bower
-
-Using bower makes files available via `bower_components/iconfonts/stylesheets/`.
+__Bower:__ Using bower makes files available via `bower_components/iconfonts/stylesheets/`.
 
     $ bower install iconfonts
 
@@ -27,9 +23,7 @@ In your less/sass/styl files:
 
     @include '../bower_components/iconfonts/stylesheets/ionicons';
 
-### NPM
-
-Using npm makes files available via `node_modules/iconfonts/stylesheets/`.
+__NPM:__ Using npm makes files available via `node_modules/iconfonts/stylesheets/`.
 
     $ npm install iconfonts
 
@@ -48,7 +42,7 @@ that you need them.
 The CSS files that these fonts provide usually give you a lot of cruft, and 
 defines all the classes in one giant file.
 
-```
+```css
 /* CSS */
 .fa-user:before { content: '\f007'; }
 .fa-film:before { content: '\f008'; }
@@ -62,10 +56,11 @@ defines all the classes in one giant file.
 I prefer to not have them in my CSS files unless I need them. This project lets 
 you do that.
 
-```
+```css
 /* Stylus */
-.btn-plus {
-  &:before { fa-icon: "plus"; margin-right: 10px; }
+.btn-plus:before {
+  fa-icon("plus");
+  margin-right: 10px;
 }
 
 /* HTML */
