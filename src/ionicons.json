@@ -7,6 +7,9 @@
   "basename": "ionicons",
   "svghash": "#Ionicons",
   "nativesize": "32px",
+  "repository": {
+    "url": "https://github.com/driftyco/ionicons/"
+  },
   "icons": {
     "alert": "\\f101",
     "alert-circled": "\\f100",

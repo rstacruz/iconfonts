@@ -26,6 +26,11 @@
   // Not really used, but nice to have.
   "nativesize": "32px",
 
+  // Github link if available.
+  "repository": {
+    "url": "https://github.com/driftyco/ionicons/"
+  },
+
   "icons": {
 
     // ...

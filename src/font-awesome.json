@@ -7,6 +7,9 @@
   "basename": "fontawesome-webfont",
   "svghash": "#fontawesomeregular",
   "nativesize": "14px",
+  "repository": {
+    "url": "https://github.com/FortAwesome/Font-Awesome"
+  },
   "icons": {
     "adjust": "\\f042",
     "adn": "\\f170",
