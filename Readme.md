@@ -19,17 +19,23 @@ project.
 
 ### Bower
 
-Using bower makes files available via 
-`bower_components/iconfonts/stylesheets/___.scss`.
+Using bower makes files available via `bower_components/iconfonts/stylesheets/`.
 
-    bower install iconfonts
+    $ bower install iconfonts
+
+In your less/sass/styl files:
+
+    @include '../bower_components/iconfonts/stylesheets/ionicons';
 
 ### NPM
 
-Using bower makes files available via 
-`node_modules/iconfonts/stylesheets/___.scss`.
+Using npm makes files available via `node_modules/iconfonts/stylesheets/`.
 
     npm install iconfonts
+
+In your less/sass/styl files:
+
+    @include '../node_modules/iconfonts/stylesheets/ionicons';
 
 Why is it needed?
 -----------------
@@ -67,7 +73,7 @@ you do that.
 Setup
 -----
 
-#### SCSS
+#### SCSS ([example](stylesheets/ionicons.scss))
 
 ``` scss
 @import 'font-awesome';
@@ -94,7 +100,7 @@ otherwise the same as above.
 @include fa-font-rails();
 ```
 
-#### Stylus
+#### Stylus ([example](stylesheets/ionicons.styl))
 
 ``` sass
 @require font-awesome
@@ -107,7 +113,7 @@ button:before
 
 See [a stylus file](stylesheets/ionicons.styl) for more info.
 
-#### Less
+#### Less ([example](stylesheets/ionicons.less))
 
 ``` less
 @import 'font-awesome';
