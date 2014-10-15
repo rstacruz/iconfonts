@@ -84,17 +84,17 @@ $fa-nativesize: "14px" !default;
   @extend %fa-icon;
   @extend %fa-icon-#{$type};
 
-  @unless size is "auto" {
+  @if $size != auto {
     font-size: $size; }
-  @unless top is "auto" {
+  @if $top != auto {
     position: relative;
     top: $top; }
-  @unless left is "auto" {
+  @if $left != auto {
     position: relative;
     left: $left; }
-  @unless color is "auto" {
+  @if $color != auto {
     color: $color; }
-  @unless shadow is "none" {
+  @if $shadow != none {
     text-shadow: $shadow; }
 }
 
