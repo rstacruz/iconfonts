@@ -1,3 +1,7 @@
+## v0.4.0 - October 15, 2014
+
+ * SCSS: fix. (it didn't work well at all before!)
+
 ## v0.3.0 - August 4, 2014
 
  * SCSS: Remove an extra variable definition that's not needed.
