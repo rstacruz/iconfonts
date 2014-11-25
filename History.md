@@ -1,3 +1,7 @@
+## v0.5.0 - November 26, 2014
+
+ * Update font-awesome to 4.2.0
+
 ## v0.4.0 - October 15, 2014
 
  * SCSS: fix. (it didn't work well at all before!)
