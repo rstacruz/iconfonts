@@ -1,4 +1,4 @@
-## v0.5.0 - November 26, 2014
+## v0.5.1 - November 26, 2014
 
  * Update font-awesome to 4.2.0
 
