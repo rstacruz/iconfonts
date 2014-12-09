@@ -1,3 +1,8 @@
+## v0.6.0 - December 9, 2014
+
+ * Add PaymentFont 0.1.0 (experimental)
+ * Update ionicons to 2.0.0
+
 ## v0.5.1 - November 26, 2014
 
  * Update font-awesome to 4.2.0
