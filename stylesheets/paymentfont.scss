@@ -1,4 +1,4 @@
-// PaymentFont v0.1.2
+// PaymentFont v1.0.0
 // http://paymentfont.io/
 //
 // Sass integration via https://github.com/rstacruz/iconfonts.
@@ -22,16 +22,16 @@
 //
 // Icon files:
 //
-//     http://paymentfont.io/assets/fonts/paymentfont-webfont.eot
-//     http://paymentfont.io/assets/fonts/paymentfont-webfont.ttf
-//     http://paymentfont.io/assets/fonts/paymentfont-webfont.woff
-//     http://paymentfont.io/assets/fonts/paymentfont-webfont.svg
+//     http://cdn.rawgit.com/vendocrat/PaymentFont/v1.0.0/fonts/paymentfont-webfont.eot
+//     http://cdn.rawgit.com/vendocrat/PaymentFont/v1.0.0/fonts/paymentfont-webfont.ttf
+//     http://cdn.rawgit.com/vendocrat/PaymentFont/v1.0.0/fonts/paymentfont-webfont.woff
+//     http://cdn.rawgit.com/vendocrat/PaymentFont/v1.0.0/fonts/paymentfont-webfont.svg
 
-$pf-path: "//paymentfont.io/assets/fonts/" !default;
+$pf-path: "//cdn.rawgit.com/vendocrat/PaymentFont/v1.0.0/fonts/" !default;
 $pf-name: "PaymentFont" !default;
 $pf-site: "http://paymentfont.io/" !default;
 $pf-basename: "paymentfont-webfont" !default;
-$pf-version: "0.1.2" !default;
+$pf-version: "1.0.0" !default;
 $pf-svghash: "#paymentfont-webfont" !default;
 $pf-nativesize: "14px" !default;
 
@@ -114,7 +114,9 @@ $pf-nativesize: "14px" !default;
 %pf-icon-amazon { content: "\f000"; }
 %pf-icon-american-express { content: "\f001"; }
 %pf-icon-american-express-alt { content: "\f002"; }
+%pf-icon-apple-pay { content: "\f04c"; }
 %pf-icon-atm { content: "\f003"; }
+%pf-icon-bancontact-mister-cash { content: "\f050"; }
 %pf-icon-bank-transfer { content: "\f005"; }
 %pf-icon-bankomat { content: "\f004"; }
 %pf-icon-bitcoin { content: "\f006"; }
@@ -125,14 +127,18 @@ $pf-nativesize: "14px" !default;
 %pf-icon-carta-si { content: "\f00b"; }
 %pf-icon-cash { content: "\f00c"; }
 %pf-icon-cash-on-delivery { content: "\f00d"; }
+%pf-icon-cash-on-pickup { content: "\f053"; }
 %pf-icon-cb { content: "\f00e"; }
 %pf-icon-cirrus { content: "\f00f"; }
 %pf-icon-cirrus-alt { content: "\f010"; }
 %pf-icon-clickandbuy { content: "\f011"; }
 %pf-icon-credit-card { content: "\f012"; }
+%pf-icon-dankort { content: "\f04f"; }
 %pf-icon-diners { content: "\f013"; }
 %pf-icon-discover { content: "\f014"; }
 %pf-icon-ec { content: "\f015"; }
+%pf-icon-elo { content: "\f055"; }
+%pf-icon-elo-alt { content: "\f056"; }
 %pf-icon-eps { content: "\f016"; }
 %pf-icon-eur { content: "\f017"; }
 %pf-icon-facture { content: "\f018"; }
@@ -143,9 +149,12 @@ $pf-nativesize: "14px" !default;
 %pf-icon-google-wallet { content: "\f01d"; }
 %pf-icon-google-wallet-alt { content: "\f01e"; }
 %pf-icon-gpb { content: "\f01f"; }
+%pf-icon-gratipay { content: "\f01c"; }
+%pf-icon-gratipay-sign { content: "\f05c"; }
 %pf-icon-ideal { content: "\f020"; }
 %pf-icon-ils { content: "\f021"; }
 %pf-icon-inr { content: "\f022"; }
+%pf-icon-interac { content: "\f04d"; }
 %pf-icon-invoice { content: "\f023"; }
 %pf-icon-invoice-sign { content: "\f024"; }
 %pf-icon-invoice-sign-alt { content: "\f025"; }
@@ -159,17 +168,29 @@ $pf-nativesize: "14px" !default;
 %pf-icon-mastercard { content: "\f02d"; }
 %pf-icon-mastercard-alt { content: "\f02e"; }
 %pf-icon-mastercard-securecode { content: "\f02f"; }
+%pf-icon-mercado-pago { content: "\f058"; }
+%pf-icon-mercado-pago-sign { content: "\f059"; }
+%pf-icon-moip { content: "\f051"; }
+%pf-icon-multibanco { content: "\f05b"; }
 %pf-icon-ogone { content: "\f030"; }
+%pf-icon-pagseguro { content: "\f052"; }
 %pf-icon-paybox { content: "\f031"; }
 %pf-icon-paylife { content: "\f032"; }
+%pf-icon-paymill { content: "\f04e"; }
 %pf-icon-paypal { content: "\f033"; }
 %pf-icon-paypal-alt { content: "\f034"; }
 %pf-icon-paysafecard { content: "\f035"; }
+%pf-icon-payshop { content: "\f05a"; }
+%pf-icon-payu { content: "\f057"; }
 %pf-icon-postepay { content: "\f036"; }
 %pf-icon-quick { content: "\f037"; }
 %pf-icon-rechnung { content: "\f038"; }
 %pf-icon-ripple { content: "\f039"; }
 %pf-icon-rub { content: "\f03a"; }
+%pf-icon-sage { content: "\f054"; }
+%pf-icon-sepa { content: "\f04a"; }
+%pf-icon-sepa-alt { content: "\f04b"; }
+%pf-icon-six { content: "\f05d"; }
 %pf-icon-skrill { content: "\f03b"; }
 %pf-icon-sofort { content: "\f03c"; }
 %pf-icon-square { content: "\f03d"; }
