@@ -1,3 +1,9 @@
+## v0.7.0 - Jan 25, 2015
+
+ * Update PaymentFont to 1.0.0
+ * Fix .less files's cachebusters to look consistent
+ * Update ionicons to 2.0.1
+
 ## v0.6.0 - December 9, 2014
 
  * Add PaymentFont 0.1.0 (experimental)

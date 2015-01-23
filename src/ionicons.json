@@ -1,9 +1,9 @@
 {
   "name": "Ionicons",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "prefix": "ion",
   "site": "http://ionicons.com",
-  "path": "//code.ionicframework.com/ionicons/2.0.0/fonts/",
+  "path": "//code.ionicframework.com/ionicons/2.0.1/fonts/",
   "basename": "ionicons",
   "svghash": "#Ionicons",
   "nativesize": "32px",
