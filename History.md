@@ -1,4 +1,4 @@
-## v0.7.0 - Jan 25, 2015
+## v0.7.0 - January 24, 2015
 
  * Update PaymentFont to 1.0.0
  * Fix .less files's cachebusters to look consistent
