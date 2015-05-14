@@ -31,6 +31,20 @@ In your less/sass/styl files:
 
     @include '../node_modules/iconfonts/stylesheets/ionicons';
 
+__Rails:__ Use rails-assets.org.
+
+```ruby
+source 'https://rails-assets.org' do
+  gem 'rails-assets-iconfonts'
+end
+```
+
+In your sass files:
+
+```scss
+@import 'iconfonts/stylesheets/ionicons';
+```
+
 [![npm version](https://badge.fury.io/js/iconfonts.svg)](https://npmjs.org/package/iconfonts "View this project on npm")
 
 Why is it needed?
@@ -85,12 +99,12 @@ button:before {
 
 See [a Sass file](stylesheets/ionicons.scss) for more info.
 
-#### SCSS on Rails
+#### SCSS on Rails without CDN's
 
-If you're on Rails (with [sass-rails]) and prefer to keep the files in your 
-project, download the font files to `vendor/assets/images/`. Afterwards, use
-`xx-font-rails()` instead of `xx-font()` to embed the @font-face.  Usage is 
-otherwise the same as above.
+*Optional:* If you're on Rails (with [sass-rails]), and prefer to keep the
+files in your project, download the font files to `vendor/assets/images/`.
+Afterwards, use `xx-font-rails()` instead of `xx-font()` to embed the
+@font-face.  Usage is otherwise the same as above.
 
 ``` scss
 @import 'font-awesome';
