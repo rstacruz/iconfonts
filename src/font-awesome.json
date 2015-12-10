@@ -3,7 +3,7 @@
   "version": "4.2.0",
   "prefix": "fa",
   "site": "http://fontawesome.io/",
-  "path": "//netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/",
+  "path": "https://netdna.bootstrapcdn.com/font-awesome/4.2.0/fonts/",
   "basename": "fontawesome-webfont",
   "svghash": "#fontawesomeregular",
   "nativesize": "14px",

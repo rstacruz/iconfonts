@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "prefix": "pf",
   "site": "http://paymentfont.io/",
-  "path": "//cdn.rawgit.com/vendocrat/PaymentFont/v1.0.0/fonts/",
+  "path": "https://cdn.rawgit.com/vendocrat/PaymentFont/v1.0.0/fonts/",
   "basename": "paymentfont-webfont",
   "svghash": "#paymentfont-webfont",
   "nativesize": "14px",
