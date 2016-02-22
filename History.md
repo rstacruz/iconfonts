@@ -1,3 +1,10 @@
+## [v0.9.0]
+> Feb 22, 2016
+
+- [#2] - Update fontawesome to 4.5.0 ([@mikmikmik])
+
+[v0.9.0]: https://github.com/rstacruz/iconfonts/compare/v0.8.0...v0.9.0
+
 ## [v0.8.0]
 > Dec 10, 2015
 
@@ -59,3 +66,5 @@ Initial release.
 [v0.7.0]: https://github.com/rstacruz/iconfonts/compare/v0.6.0...v0.7.0
 [v0.6.0]: https://github.com/rstacruz/iconfonts/compare/v0.5.1...v0.6.0
 [v0.5.1]: https://github.com/rstacruz/iconfonts/compare/v0.4.0...v0.5.1
+[#2]: https://github.com/rstacruz/iconfonts/issues/2
+[@mikmikmik]: https://github.com/mikmikmik
