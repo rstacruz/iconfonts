@@ -25,7 +25,7 @@ In your less/sass/styl files:
 
 __NPM:__ Using npm makes files available via `node_modules/iconfonts/stylesheets/`.
 
-    $ npm install iconfonts
+    $ npm install iconfonts --save
 
 In your less/sass/styl files:
 
