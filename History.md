@@ -1,3 +1,9 @@
+## [v0.10.0]
+> Oct 14, 2016
+
+- Add support for ionicons 3 (`ionicons@3.scss`).
+
+[v0.9.0]: https://github.com/rstacruz/iconfonts/compare/v0.9.0...v0.10.0
 ## [v0.9.0]
 > Feb 22, 2016
 
