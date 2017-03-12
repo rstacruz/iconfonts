@@ -2,12 +2,13 @@ srcfiles = $(wildcard src/*.json)
 stylfiles = $(patsubst src/%.json, stylesheets/%.styl, ${srcfiles})
 scssfiles = $(patsubst src/%.json, stylesheets/%.scss, ${srcfiles})
 lessfiles = $(patsubst src/%.json, stylesheets/%.less, ${srcfiles})
+cssnextfiles = $(patsubst src/%.json, stylesheets/%.cssnext.css, ${srcfiles})
 stylus = ./node_modules/.bin/stylus
 lessc = ./node_modules/.bin/lessc
 nodesass = ./node_modules/.bin/node-sass
 sass = sass --scss
 
-all: ${stylfiles} ${scssfiles} ${lessfiles} support/icons.json
+all: ${stylfiles} ${scssfiles} ${lessfiles} ${cssnextfiles} support/icons.json
 
 stylesheets/%.styl: src/%.json
 	@echo + $@
@@ -20,6 +21,10 @@ stylesheets/%.scss: src/%.json
 stylesheets/%.less: src/%.json
 	@echo + $@
 	@node support/build.js "$<" support/less.tpl > $@
+
+stylesheets/%.cssnext.css: src/%.json
+	@echo + $@
+	@node support/build.js "$<" support/cssnext.tpl > $@
 
 support/icons.json: ${srcfiles}
 	@echo + $@
