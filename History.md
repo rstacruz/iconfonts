@@ -1,3 +1,10 @@
+## [v0.11.0]
+> Mar 12, 2017
+
+- Add support for [cssnext](http://cssnext.io/).
+
+[v0.11.0]: https://github.com/rstacruz/iconfonts/compare/v0.10.0...v0.11.0
+
 ## [v0.10.0]
 > Oct 14, 2016
 

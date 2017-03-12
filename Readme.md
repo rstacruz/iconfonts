@@ -156,7 +156,7 @@ otherwise the same as above.
 #### PostCSS + [cssnext](http://cssnext.io) + [postcss-import](https://www.npmjs.com/package/postcss-import)
 
 ``` css
-@import 'iconfonts/stylesheets/font-awesome';
+@import 'iconfonts/stylesheets/font-awesome.cssnext.css';
 
 @apply --fa-font;
 
