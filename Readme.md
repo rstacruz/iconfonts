@@ -153,9 +153,22 @@ otherwise the same as above.
 [sass-rails]: https://github.com/rails/sass-rails
 [less-rails]: https://github.com/metaskills/less-rails
 
+#### PostCSS + [cssnext](http://cssnext.io) + [postcss-import](https://www.npmjs.com/package/postcss-import)
+
+``` css
+@import 'iconfonts/stylesheets/font-awesome';
+
+@apply --fa-font;
+
+button::before {
+  @apply --fa-icon;
+  @apply --fa-icon-music;
+}
+```
+
 ## Thanks
 
-**Iconfonts** © 2014+, Rico Sta. Cruz. Released under the [MIT License].<br>
+**Iconfonts** © 2014-2017, Rico Sta. Cruz. Released under the [MIT License].<br>
 Authored and maintained by Rico Sta. Cruz with help from [contributors].
 
 > [ricostacruz.com](http://ricostacruz.com) &nbsp;&middot;&nbsp;
