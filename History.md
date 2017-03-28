@@ -1,3 +1,10 @@
+## [v0.11.1]
+> Mar 29, 2017
+
+- Remove a stray file.
+
+[v0.11.1]: https://github.com/rstacruz/iconfonts/compare/v0.11.0...v0.11.1
+
 ## [v0.11.0]
 > Mar 12, 2017
 
