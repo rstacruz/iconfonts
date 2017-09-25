@@ -1,4 +1,4 @@
-// FontAwesome v4.5.0
+// FontAwesome v4.7.0
 // http://fontawesome.io/
 //
 // Sass integration via https://github.com/rstacruz/iconfonts.
@@ -22,16 +22,16 @@
 //
 // Icon files:
 //
-//     https://netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot
-//     https://netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf
-//     https://netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff
-//     https://netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg
+//     https://netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot
+//     https://netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf
+//     https://netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff
+//     https://netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg
 
-$fa-path: "https://netdna.bootstrapcdn.com/font-awesome/4.5.0/fonts/" !default;
+$fa-path: "https://netdna.bootstrapcdn.com/font-awesome/4.7.0/fonts/" !default;
 $fa-name: "FontAwesome" !default;
 $fa-site: "http://fontawesome.io/" !default;
 $fa-basename: "fontawesome-webfont" !default;
-$fa-version: "4.5.0" !default;
+$fa-version: "4.7.0" !default;
 $fa-svghash: "#fontawesomeregular" !default;
 $fa-nativesize: "14px" !default;
 
@@ -112,6 +112,10 @@ $fa-nativesize: "14px" !default;
 }
 
 %fa-icon-500px { content: "\f26e"; }
+%fa-icon-address-book { content: "\f2b9"; }
+%fa-icon-address-book-o { content: "\f2ba"; }
+%fa-icon-address-card { content: "\f2bb"; }
+%fa-icon-address-card-o { content: "\f2bc"; }
 %fa-icon-adjust { content: "\f042"; }
 %fa-icon-adn { content: "\f170"; }
 %fa-icon-align-center { content: "\f037"; }
@@ -120,6 +124,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-align-right { content: "\f038"; }
 %fa-icon-amazon { content: "\f270"; }
 %fa-icon-ambulance { content: "\f0f9"; }
+%fa-icon-american-sign-language-interpreting { content: "\f2a3"; }
 %fa-icon-anchor { content: "\f13d"; }
 %fa-icon-android { content: "\f17b"; }
 %fa-icon-angellist { content: "\f209"; }
@@ -150,17 +155,24 @@ $fa-nativesize: "14px" !default;
 %fa-icon-arrows-alt { content: "\f0b2"; }
 %fa-icon-arrows-h { content: "\f07e"; }
 %fa-icon-arrows-v { content: "\f07d"; }
+%fa-icon-asl-interpreting { content: "\f2a3"; }
+%fa-icon-assistive-listening-systems { content: "\f2a2"; }
 %fa-icon-asterisk { content: "\f069"; }
 %fa-icon-at { content: "\f1fa"; }
+%fa-icon-audio-description { content: "\f29e"; }
 %fa-icon-automobile { content: "\f1b9"; }
 %fa-icon-backward { content: "\f04a"; }
 %fa-icon-balance-scale { content: "\f24e"; }
 %fa-icon-ban { content: "\f05e"; }
+%fa-icon-bandcamp { content: "\f2d5"; }
 %fa-icon-bank { content: "\f19c"; }
 %fa-icon-bar-chart { content: "\f080"; }
 %fa-icon-bar-chart-o { content: "\f080"; }
 %fa-icon-barcode { content: "\f02a"; }
 %fa-icon-bars { content: "\f0c9"; }
+%fa-icon-bath { content: "\f2cd"; }
+%fa-icon-bathtub { content: "\f2cd"; }
+%fa-icon-battery { content: "\f240"; }
 %fa-icon-battery-0 { content: "\f244"; }
 %fa-icon-battery-1 { content: "\f243"; }
 %fa-icon-battery-2 { content: "\f242"; }
@@ -186,6 +198,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-bitbucket-square { content: "\f172"; }
 %fa-icon-bitcoin { content: "\f15a"; }
 %fa-icon-black-tie { content: "\f27e"; }
+%fa-icon-blind { content: "\f29d"; }
 %fa-icon-bluetooth { content: "\f293"; }
 %fa-icon-bluetooth-b { content: "\f294"; }
 %fa-icon-bold { content: "\f032"; }
@@ -194,6 +207,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-book { content: "\f02d"; }
 %fa-icon-bookmark { content: "\f02e"; }
 %fa-icon-bookmark-o { content: "\f097"; }
+%fa-icon-braille { content: "\f2a1"; }
 %fa-icon-briefcase { content: "\f0b1"; }
 %fa-icon-btc { content: "\f15a"; }
 %fa-icon-bug { content: "\f188"; }
@@ -296,6 +310,8 @@ $fa-nativesize: "14px" !default;
 %fa-icon-dashboard { content: "\f0e4"; }
 %fa-icon-dashcube { content: "\f210"; }
 %fa-icon-database { content: "\f1c0"; }
+%fa-icon-deaf { content: "\f2a4"; }
+%fa-icon-deafness { content: "\f2a4"; }
 %fa-icon-dedent { content: "\f03b"; }
 %fa-icon-delicious { content: "\f1a5"; }
 %fa-icon-desktop { content: "\f108"; }
@@ -306,18 +322,25 @@ $fa-nativesize: "14px" !default;
 %fa-icon-dot-circle-o { content: "\f192"; }
 %fa-icon-download { content: "\f019"; }
 %fa-icon-dribbble { content: "\f17d"; }
+%fa-icon-drivers-license { content: "\f2c2"; }
+%fa-icon-drivers-license-o { content: "\f2c3"; }
 %fa-icon-dropbox { content: "\f16b"; }
 %fa-icon-drupal { content: "\f1a9"; }
 %fa-icon-edge { content: "\f282"; }
 %fa-icon-edit { content: "\f044"; }
+%fa-icon-eercast { content: "\f2da"; }
 %fa-icon-eject { content: "\f052"; }
 %fa-icon-ellipsis-h { content: "\f141"; }
 %fa-icon-ellipsis-v { content: "\f142"; }
 %fa-icon-empire { content: "\f1d1"; }
 %fa-icon-envelope { content: "\f0e0"; }
 %fa-icon-envelope-o { content: "\f003"; }
+%fa-icon-envelope-open { content: "\f2b6"; }
+%fa-icon-envelope-open-o { content: "\f2b7"; }
 %fa-icon-envelope-square { content: "\f199"; }
+%fa-icon-envira { content: "\f299"; }
 %fa-icon-eraser { content: "\f12d"; }
+%fa-icon-etsy { content: "\f2d7"; }
 %fa-icon-eur { content: "\f153"; }
 %fa-icon-euro { content: "\f153"; }
 %fa-icon-exchange { content: "\f0ec"; }
@@ -331,6 +354,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-eye { content: "\f06e"; }
 %fa-icon-eye-slash { content: "\f070"; }
 %fa-icon-eyedropper { content: "\f1fb"; }
+%fa-icon-fa { content: "\f2b4"; }
 %fa-icon-facebook { content: "\f09a"; }
 %fa-icon-facebook-f { content: "\f09a"; }
 %fa-icon-facebook-official { content: "\f230"; }
@@ -365,6 +389,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-fire { content: "\f06d"; }
 %fa-icon-fire-extinguisher { content: "\f134"; }
 %fa-icon-firefox { content: "\f269"; }
+%fa-icon-first-order { content: "\f2b0"; }
 %fa-icon-flag { content: "\f024"; }
 %fa-icon-flag-checkered { content: "\f11e"; }
 %fa-icon-flag-o { content: "\f11d"; }
@@ -377,11 +402,13 @@ $fa-nativesize: "14px" !default;
 %fa-icon-folder-open { content: "\f07c"; }
 %fa-icon-folder-open-o { content: "\f115"; }
 %fa-icon-font { content: "\f031"; }
+%fa-icon-font-awesome { content: "\f2b4"; }
 %fa-icon-fonticons { content: "\f280"; }
 %fa-icon-fort-awesome { content: "\f286"; }
 %fa-icon-forumbee { content: "\f211"; }
 %fa-icon-forward { content: "\f04e"; }
 %fa-icon-foursquare { content: "\f180"; }
+%fa-icon-free-code-camp { content: "\f2c5"; }
 %fa-icon-frown-o { content: "\f119"; }
 %fa-icon-futbol-o { content: "\f1e3"; }
 %fa-icon-gamepad { content: "\f11b"; }
@@ -400,15 +427,21 @@ $fa-nativesize: "14px" !default;
 %fa-icon-github { content: "\f09b"; }
 %fa-icon-github-alt { content: "\f113"; }
 %fa-icon-github-square { content: "\f092"; }
+%fa-icon-gitlab { content: "\f296"; }
 %fa-icon-gittip { content: "\f184"; }
 %fa-icon-glass { content: "\f000"; }
+%fa-icon-glide { content: "\f2a5"; }
+%fa-icon-glide-g { content: "\f2a6"; }
 %fa-icon-globe { content: "\f0ac"; }
 %fa-icon-google { content: "\f1a0"; }
 %fa-icon-google-plus { content: "\f0d5"; }
+%fa-icon-google-plus-circle { content: "\f2b3"; }
+%fa-icon-google-plus-official { content: "\f2b3"; }
 %fa-icon-google-plus-square { content: "\f0d4"; }
 %fa-icon-google-wallet { content: "\f1ee"; }
 %fa-icon-graduation-cap { content: "\f19d"; }
 %fa-icon-gratipay { content: "\f184"; }
+%fa-icon-grav { content: "\f2d6"; }
 %fa-icon-group { content: "\f0c0"; }
 %fa-icon-h-square { content: "\f0fd"; }
 %fa-icon-hacker-news { content: "\f1d4"; }
@@ -425,6 +458,8 @@ $fa-nativesize: "14px" !default;
 %fa-icon-hand-scissors-o { content: "\f257"; }
 %fa-icon-hand-spock-o { content: "\f259"; }
 %fa-icon-hand-stop-o { content: "\f256"; }
+%fa-icon-handshake-o { content: "\f2b5"; }
+%fa-icon-hard-of-hearing { content: "\f2a4"; }
 %fa-icon-hashtag { content: "\f292"; }
 %fa-icon-hdd-o { content: "\f0a0"; }
 %fa-icon-header { content: "\f1dc"; }
@@ -447,8 +482,12 @@ $fa-nativesize: "14px" !default;
 %fa-icon-houzz { content: "\f27c"; }
 %fa-icon-html5 { content: "\f13b"; }
 %fa-icon-i-cursor { content: "\f246"; }
+%fa-icon-id-badge { content: "\f2c1"; }
+%fa-icon-id-card { content: "\f2c2"; }
+%fa-icon-id-card-o { content: "\f2c3"; }
 %fa-icon-ils { content: "\f20b"; }
 %fa-icon-image { content: "\f03e"; }
+%fa-icon-imdb { content: "\f2d8"; }
 %fa-icon-inbox { content: "\f01c"; }
 %fa-icon-indent { content: "\f03c"; }
 %fa-icon-industry { content: "\f275"; }
@@ -486,6 +525,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-link { content: "\f0c1"; }
 %fa-icon-linkedin { content: "\f0e1"; }
 %fa-icon-linkedin-square { content: "\f08c"; }
+%fa-icon-linode { content: "\f2b8"; }
 %fa-icon-linux { content: "\f17c"; }
 %fa-icon-list { content: "\f03a"; }
 %fa-icon-list-alt { content: "\f022"; }
@@ -497,6 +537,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-long-arrow-left { content: "\f177"; }
 %fa-icon-long-arrow-right { content: "\f178"; }
 %fa-icon-long-arrow-up { content: "\f176"; }
+%fa-icon-low-vision { content: "\f2a8"; }
 %fa-icon-magic { content: "\f0d0"; }
 %fa-icon-magnet { content: "\f076"; }
 %fa-icon-mail-forward { content: "\f064"; }
@@ -517,8 +558,10 @@ $fa-nativesize: "14px" !default;
 %fa-icon-meanpath { content: "\f20c"; }
 %fa-icon-medium { content: "\f23a"; }
 %fa-icon-medkit { content: "\f0fa"; }
+%fa-icon-meetup { content: "\f2e0"; }
 %fa-icon-meh-o { content: "\f11a"; }
 %fa-icon-mercury { content: "\f223"; }
+%fa-icon-microchip { content: "\f2db"; }
 %fa-icon-microphone { content: "\f130"; }
 %fa-icon-microphone-slash { content: "\f131"; }
 %fa-icon-minus { content: "\f068"; }
@@ -568,8 +611,9 @@ $fa-nativesize: "14px" !default;
 %fa-icon-photo { content: "\f03e"; }
 %fa-icon-picture-o { content: "\f03e"; }
 %fa-icon-pie-chart { content: "\f200"; }
-%fa-icon-pied-piper { content: "\f1a7"; }
+%fa-icon-pied-piper { content: "\f2ae"; }
 %fa-icon-pied-piper-alt { content: "\f1a8"; }
+%fa-icon-pied-piper-pp { content: "\f1a7"; }
 %fa-icon-pinterest { content: "\f0d2"; }
 %fa-icon-pinterest-p { content: "\f231"; }
 %fa-icon-pinterest-square { content: "\f0d3"; }
@@ -582,6 +626,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-plus-circle { content: "\f055"; }
 %fa-icon-plus-square { content: "\f0fe"; }
 %fa-icon-plus-square-o { content: "\f196"; }
+%fa-icon-podcast { content: "\f2ce"; }
 %fa-icon-power-off { content: "\f011"; }
 %fa-icon-print { content: "\f02f"; }
 %fa-icon-product-hunt { content: "\f288"; }
@@ -590,10 +635,13 @@ $fa-nativesize: "14px" !default;
 %fa-icon-qrcode { content: "\f029"; }
 %fa-icon-question { content: "\f128"; }
 %fa-icon-question-circle { content: "\f059"; }
+%fa-icon-question-circle-o { content: "\f29c"; }
+%fa-icon-quora { content: "\f2c4"; }
 %fa-icon-quote-left { content: "\f10d"; }
 %fa-icon-quote-right { content: "\f10e"; }
 %fa-icon-ra { content: "\f1d0"; }
 %fa-icon-random { content: "\f074"; }
+%fa-icon-ravelry { content: "\f2d9"; }
 %fa-icon-rebel { content: "\f1d0"; }
 %fa-icon-recycle { content: "\f1b8"; }
 %fa-icon-reddit { content: "\f1a1"; }
@@ -607,6 +655,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-repeat { content: "\f01e"; }
 %fa-icon-reply { content: "\f112"; }
 %fa-icon-reply-all { content: "\f122"; }
+%fa-icon-resistance { content: "\f1d0"; }
 %fa-icon-retweet { content: "\f079"; }
 %fa-icon-rmb { content: "\f157"; }
 %fa-icon-road { content: "\f018"; }
@@ -619,6 +668,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-rub { content: "\f158"; }
 %fa-icon-ruble { content: "\f158"; }
 %fa-icon-rupee { content: "\f156"; }
+%fa-icon-s15 { content: "\f2cd"; }
 %fa-icon-safari { content: "\f267"; }
 %fa-icon-save { content: "\f0c7"; }
 %fa-icon-scissors { content: "\f0c4"; }
@@ -643,9 +693,12 @@ $fa-nativesize: "14px" !default;
 %fa-icon-shopping-bag { content: "\f290"; }
 %fa-icon-shopping-basket { content: "\f291"; }
 %fa-icon-shopping-cart { content: "\f07a"; }
+%fa-icon-shower { content: "\f2cc"; }
 %fa-icon-sign-in { content: "\f090"; }
+%fa-icon-sign-language { content: "\f2a7"; }
 %fa-icon-sign-out { content: "\f08b"; }
 %fa-icon-signal { content: "\f012"; }
+%fa-icon-signing { content: "\f2a7"; }
 %fa-icon-simplybuilt { content: "\f215"; }
 %fa-icon-sitemap { content: "\f0e8"; }
 %fa-icon-skyatlas { content: "\f216"; }
@@ -654,6 +707,10 @@ $fa-nativesize: "14px" !default;
 %fa-icon-sliders { content: "\f1de"; }
 %fa-icon-slideshare { content: "\f1e7"; }
 %fa-icon-smile-o { content: "\f118"; }
+%fa-icon-snapchat { content: "\f2ab"; }
+%fa-icon-snapchat-ghost { content: "\f2ac"; }
+%fa-icon-snapchat-square { content: "\f2ad"; }
+%fa-icon-snowflake-o { content: "\f2dc"; }
 %fa-icon-soccer-ball-o { content: "\f1e3"; }
 %fa-icon-sort { content: "\f0dc"; }
 %fa-icon-sort-alpha-asc { content: "\f15d"; }
@@ -699,6 +756,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-subway { content: "\f239"; }
 %fa-icon-suitcase { content: "\f0f2"; }
 %fa-icon-sun-o { content: "\f185"; }
+%fa-icon-superpowers { content: "\f2dd"; }
 %fa-icon-superscript { content: "\f12b"; }
 %fa-icon-support { content: "\f1cd"; }
 %fa-icon-table { content: "\f0ce"; }
@@ -708,6 +766,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-tags { content: "\f02c"; }
 %fa-icon-tasks { content: "\f0ae"; }
 %fa-icon-taxi { content: "\f1ba"; }
+%fa-icon-telegram { content: "\f2c6"; }
 %fa-icon-television { content: "\f26c"; }
 %fa-icon-tencent-weibo { content: "\f1d5"; }
 %fa-icon-terminal { content: "\f120"; }
@@ -716,6 +775,18 @@ $fa-nativesize: "14px" !default;
 %fa-icon-th { content: "\f00a"; }
 %fa-icon-th-large { content: "\f009"; }
 %fa-icon-th-list { content: "\f00b"; }
+%fa-icon-themeisle { content: "\f2b2"; }
+%fa-icon-thermometer { content: "\f2c7"; }
+%fa-icon-thermometer-0 { content: "\f2cb"; }
+%fa-icon-thermometer-1 { content: "\f2ca"; }
+%fa-icon-thermometer-2 { content: "\f2c9"; }
+%fa-icon-thermometer-3 { content: "\f2c8"; }
+%fa-icon-thermometer-4 { content: "\f2c7"; }
+%fa-icon-thermometer-empty { content: "\f2cb"; }
+%fa-icon-thermometer-full { content: "\f2c7"; }
+%fa-icon-thermometer-half { content: "\f2c9"; }
+%fa-icon-thermometer-quarter { content: "\f2ca"; }
+%fa-icon-thermometer-three-quarters { content: "\f2c8"; }
 %fa-icon-thumb-tack { content: "\f08d"; }
 %fa-icon-thumbs-down { content: "\f165"; }
 %fa-icon-thumbs-o-down { content: "\f088"; }
@@ -725,6 +796,8 @@ $fa-nativesize: "14px" !default;
 %fa-icon-times { content: "\f00d"; }
 %fa-icon-times-circle { content: "\f057"; }
 %fa-icon-times-circle-o { content: "\f05c"; }
+%fa-icon-times-rectangle { content: "\f2d3"; }
+%fa-icon-times-rectangle-o { content: "\f2d4"; }
 %fa-icon-tint { content: "\f043"; }
 %fa-icon-toggle-down { content: "\f150"; }
 %fa-icon-toggle-left { content: "\f191"; }
@@ -755,6 +828,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-umbrella { content: "\f0e9"; }
 %fa-icon-underline { content: "\f0cd"; }
 %fa-icon-undo { content: "\f0e2"; }
+%fa-icon-universal-access { content: "\f29a"; }
 %fa-icon-university { content: "\f19c"; }
 %fa-icon-unlink { content: "\f127"; }
 %fa-icon-unlock { content: "\f09c"; }
@@ -764,20 +838,28 @@ $fa-nativesize: "14px" !default;
 %fa-icon-usb { content: "\f287"; }
 %fa-icon-usd { content: "\f155"; }
 %fa-icon-user { content: "\f007"; }
+%fa-icon-user-circle { content: "\f2bd"; }
+%fa-icon-user-circle-o { content: "\f2be"; }
 %fa-icon-user-md { content: "\f0f0"; }
+%fa-icon-user-o { content: "\f2c0"; }
 %fa-icon-user-plus { content: "\f234"; }
 %fa-icon-user-secret { content: "\f21b"; }
 %fa-icon-user-times { content: "\f235"; }
 %fa-icon-users { content: "\f0c0"; }
+%fa-icon-vcard { content: "\f2bb"; }
+%fa-icon-vcard-o { content: "\f2bc"; }
 %fa-icon-venus { content: "\f221"; }
 %fa-icon-venus-double { content: "\f226"; }
 %fa-icon-venus-mars { content: "\f228"; }
 %fa-icon-viacoin { content: "\f237"; }
+%fa-icon-viadeo { content: "\f2a9"; }
+%fa-icon-viadeo-square { content: "\f2aa"; }
 %fa-icon-video-camera { content: "\f03d"; }
 %fa-icon-vimeo { content: "\f27d"; }
 %fa-icon-vimeo-square { content: "\f194"; }
 %fa-icon-vine { content: "\f1ca"; }
 %fa-icon-vk { content: "\f189"; }
+%fa-icon-volume-control-phone { content: "\f2a0"; }
 %fa-icon-volume-down { content: "\f027"; }
 %fa-icon-volume-off { content: "\f026"; }
 %fa-icon-volume-up { content: "\f028"; }
@@ -787,11 +869,20 @@ $fa-nativesize: "14px" !default;
 %fa-icon-weixin { content: "\f1d7"; }
 %fa-icon-whatsapp { content: "\f232"; }
 %fa-icon-wheelchair { content: "\f193"; }
+%fa-icon-wheelchair-alt { content: "\f29b"; }
 %fa-icon-wifi { content: "\f1eb"; }
 %fa-icon-wikipedia-w { content: "\f266"; }
+%fa-icon-window-close { content: "\f2d3"; }
+%fa-icon-window-close-o { content: "\f2d4"; }
+%fa-icon-window-maximize { content: "\f2d0"; }
+%fa-icon-window-minimize { content: "\f2d1"; }
+%fa-icon-window-restore { content: "\f2d2"; }
 %fa-icon-windows { content: "\f17a"; }
 %fa-icon-won { content: "\f159"; }
 %fa-icon-wordpress { content: "\f19a"; }
+%fa-icon-wpbeginner { content: "\f297"; }
+%fa-icon-wpexplorer { content: "\f2de"; }
+%fa-icon-wpforms { content: "\f298"; }
 %fa-icon-wrench { content: "\f0ad"; }
 %fa-icon-xing { content: "\f168"; }
 %fa-icon-xing-square { content: "\f169"; }
@@ -802,6 +893,7 @@ $fa-nativesize: "14px" !default;
 %fa-icon-yc-square { content: "\f1d4"; }
 %fa-icon-yelp { content: "\f1e9"; }
 %fa-icon-yen { content: "\f157"; }
+%fa-icon-yoast { content: "\f2b1"; }
 %fa-icon-youtube { content: "\f167"; }
 %fa-icon-youtube-play { content: "\f16a"; }
 %fa-icon-youtube-square { content: "\f166"; }
