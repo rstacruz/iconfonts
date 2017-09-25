@@ -97,5 +97,5 @@ $<%= prefix %>-icon
 
 <%= prefix %>-icons = {
 <% each(function (val, key) { %>
-  <%= key %>: "<%= val %>"<% }); %>
+  '<%= key %>': "<%= val %>"<% }); %>
 }
