@@ -1,7 +1,7 @@
 {
   "name": "iconfonts",
   "description": "Fine-tuned icon fonts integration for Sass, Less and Stylus.",
-  "version": "0.11.1",
+  "version": "0.12.0",
   "author": "Rico Sta. Cruz <rico@ricostacruz.com>",
   "bugs": {
     "url": "https://github.com/rstacruz/iconfonts/issues"

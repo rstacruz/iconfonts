@@ -1,3 +1,10 @@
+## [v0.12.0]
+> Sep 25, 2017
+
+- [#5] - Upgrade font-awesome (4.5 → 4.7) ([@atomita])
+
+[v0.12.0]: https://github.com/rstacruz/iconfonts/compare/v0.11.1...v0.12.0
+
 ## [v0.11.1]
 > Mar 29, 2017
 
@@ -87,4 +94,6 @@ Initial release.
 [v0.6.0]: https://github.com/rstacruz/iconfonts/compare/v0.5.1...v0.6.0
 [v0.5.1]: https://github.com/rstacruz/iconfonts/compare/v0.4.0...v0.5.1
 [#2]: https://github.com/rstacruz/iconfonts/issues/2
+[#5]: https://github.com/rstacruz/iconfonts/issues/5
 [@mikmikmik]: https://github.com/mikmikmik
+[@atomita]: https://github.com/atomita
