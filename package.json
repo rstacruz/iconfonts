@@ -9,7 +9,7 @@
   "devDependencies": {
     "css": "2.2.1",
     "less": "2.5.3",
-    "node-sass": "3.4.2",
+    "node-sass": "4.14.1",
     "stylus": "0.52.4",
     "underscore": "1.8.3"
   },
